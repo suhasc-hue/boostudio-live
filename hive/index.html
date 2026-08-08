@@ -1,0 +1,442 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Hive — Every hive has one tiny troublemaker.</title>
+<meta name="description" content="Books, prints and survival kits for the parents of very small, very determined people.">
+<meta property="og:title" content="Happy Hive — Every hive has one tiny troublemaker.">
+<meta property="og:description" content="Books, prints and survival kits for the parents of very small, very determined people.">
+<meta property="og:image" content="img/hive_loose_cover.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#26333f;--paper:#fffdf6;--cream:#fff4e0;
+  --accent:#ff9a1f;--accent2:#8ac926;--deep:#e07a00;--leaf:#4bb3a5}
+html{scroll-behavior:smooth}
+body{font-family:'Quicksand',system-ui,sans-serif;color:var(--ink);
+  background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.dsp{font-family:'Baloo 2',cursive;line-height:1.08;font-weight:700}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,250,243,.94);
+  backdrop-filter:blur(6px);border-bottom:2px solid var(--cream)}
+.nav{display:flex;align-items:center;gap:18px;height:64px}
+.logo{font-family:'Baloo 2',cursive;font-size:22px;font-weight:700;
+  color:var(--deep);text-decoration:none;letter-spacing:-.3px}
+.logo b{color:var(--accent)}
+.nav .sp{flex:1}
+.nav a.l{text-decoration:none;font-weight:700;font-size:14.5px;opacity:.8}
+.nav a.l:hover{opacity:1;color:var(--deep)}
+@media(max-width:760px){.nav a.l{display:none}}
+.nav .ig{background:var(--accent);color:#fff;padding:8px 15px;border-radius:99px;
+  text-decoration:none;font-weight:700;font-size:14px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1200px 500px at 50% -8%, var(--cream) 0%, var(--paper) 62%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;
+  align-items:center;padding-top:44px;padding-bottom:52px}
+.hero h1{font-size:clamp(32px,5.4vw,54px);letter-spacing:-.8px}
+.hero h1 em{font-style:normal;color:var(--accent);position:relative}
+.hero p.sub{margin-top:16px;font-size:17.5px;font-weight:600;max-width:34ch;opacity:.86}
+.btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{background:var(--deep);color:#fff;border:0;padding:14px 24px;border-radius:99px;
+  font:700 15.5px 'Quicksand',sans-serif;cursor:pointer;text-decoration:none;
+  box-shadow:0 6px 0 rgba(0,0,0,.12);transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.btn.alt{background:var(--accent2);color:var(--ink)}
+.heroart{position:relative}
+.heroart img{border-radius:26px;box-shadow:0 26px 50px rgba(0,0,0,.16);
+  transform:rotate(-1.6deg)}
+.blob{position:absolute;border-radius:50%;filter:blur(.4px);opacity:.9}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:26px}
+  .heroart{order:-1}}
+.float{animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-12px)}}
+
+/* strip */
+.marq{background:var(--deep);color:#fff;padding:11px 0;font-weight:700;
+  font-size:14px;letter-spacing:.3px;overflow:hidden;white-space:nowrap}
+.marq span{display:inline-block;padding-right:40px}
+
+/* sections */
+section{padding:64px 0}
+.eyebrow{font-weight:700;font-size:12.5px;letter-spacing:2.4px;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
+.sub2{font-size:16.5px;opacity:.8;font-weight:600;max-width:56ch}
+
+/* shop */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 22px}
+.f{border:2px solid var(--cream);background:#fff;padding:8px 15px;border-radius:99px;
+  font:700 13.5px 'Quicksand',sans-serif;cursor:pointer;color:var(--ink)}
+.f.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:22px}
+.card{background:#fff;border-radius:20px;overflow:hidden;border:2px solid var(--cream);
+  transition:transform .16s,box-shadow .16s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(0,0,0,.1)}
+.shot{display:block;position:relative;background:var(--cream)}
+.shot img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.flag{position:absolute;top:11px;left:11px;background:var(--accent);color:#fff;
+  font:700 11.5px 'Quicksand',sans-serif;padding:5px 11px;border-radius:99px}
+.cbody{padding:14px 15px 16px}
+.cbody h3{font-size:17.5px;margin-bottom:5px}
+.hook{font-size:14px;opacity:.78;font-weight:600;min-height:40px}
+.crow{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.price{font-family:'Baloo 2',cursive;font-size:19px;color:var(--deep)}
+.buy{background:var(--accent);color:#fff;border:0;padding:9px 15px;border-radius:99px;
+  font:700 13.5px 'Quicksand',sans-serif;cursor:pointer}
+
+/* personalised */
+.perso{background:var(--cream);border-radius:30px;padding:38px;display:grid;
+  grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+@media(max-width:860px){.perso{grid-template-columns:1fr;padding:26px}}
+.perso h2{font-size:clamp(24px,3.4vw,34px)}
+.pform{background:#fff;border-radius:20px;padding:20px}
+.pform label{display:block;font-weight:700;font-size:13px;margin:12px 0 5px}
+.pform input,.pform select{width:100%;border:2px solid var(--cream);border-radius:12px;
+  padding:11px 13px;font:600 15px 'Quicksand',sans-serif;color:var(--ink)}
+.pform input:focus,.pform select:focus{outline:0;border-color:var(--accent)}
+.pv{margin-top:16px;background:var(--paper);border-radius:14px;padding:16px;
+  font-weight:700;text-align:center;line-height:1.5}
+.pv b{color:var(--deep)}
+
+/* sheet */
+.sheet{display:none;position:fixed;inset:0;z-index:80;background:rgba(30,20,40,.55);
+  backdrop-filter:blur(4px);overflow-y:auto;padding:24px}
+.sheet.open{display:block}
+.swrap{max-width:960px;margin:0 auto;background:var(--paper);border-radius:26px;
+  display:grid;grid-template-columns:.95fr 1.05fr;overflow:hidden}
+@media(max-width:820px){.swrap{grid-template-columns:1fr}}
+.sleft{background:var(--cream);padding:22px}
+.sleft .big{border-radius:14px;box-shadow:0 12px 26px rgba(0,0,0,.14)}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.strip img{border-radius:8px;aspect-ratio:3/4;object-fit:cover}
+.sright{padding:26px 26px 30px}
+.kicker{font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--accent)}
+.sright h2{font-size:27px;margin:8px 0 12px}
+.lead{font-size:16px;font-weight:600;opacity:.88}
+.sright h4{font-size:14px;margin:20px 0 8px;letter-spacing:.3px}
+.inside{list-style:none}
+.inside li{padding-left:22px;position:relative;font-size:14.5px;font-weight:600;
+  opacity:.85;margin-bottom:5px}
+.inside li:before{content:"●";position:absolute;left:0;color:var(--accent2)}
+.how{font-size:14.5px;font-weight:600;opacity:.85}
+.bigbuy{display:block;width:100%;text-align:center;margin-top:22px;background:var(--deep);
+  color:#fff;border:0;padding:16px;border-radius:99px;font:700 16px 'Quicksand',sans-serif;
+  cursor:pointer;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,.14)}
+.bigbuy.soon{background:var(--accent2);color:var(--ink)}
+.trust{font-size:12.5px;opacity:.65;text-align:center;margin-top:10px;font-weight:600}
+.x{position:fixed;top:18px;right:20px;background:#fff;border:0;width:40px;height:40px;
+  border-radius:50%;font-size:17px;cursor:pointer;z-index:2}
+
+/* free + faq + footer */
+.free{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.tile{background:#fff;border:2px dashed var(--cream);border-radius:20px;padding:22px}
+.tile h3{font-size:18px;margin-bottom:6px}
+.tile p{font-size:14.5px;opacity:.8;font-weight:600}
+details{background:#fff;border:2px solid var(--cream);border-radius:16px;padding:15px 18px;
+  margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;font-size:15.5px}
+details p{margin-top:9px;font-size:14.5px;opacity:.85;font-weight:600}
+.signup{background:var(--ink);color:#fff;border-radius:28px;padding:36px;text-align:center}
+.signup h2{color:#fff;font-size:clamp(22px,3vw,30px)}
+.signup p{opacity:.82;margin:10px auto 20px;max-width:48ch;font-weight:600}
+.su{display:flex;gap:9px;max-width:430px;margin:0 auto}
+.su input{flex:1;border:0;border-radius:99px;padding:13px 18px;font:600 15px sans-serif}
+.su button{background:var(--accent);color:#fff;border:0;border-radius:99px;padding:13px 22px;
+  font:700 15px 'Quicksand',sans-serif;cursor:pointer}
+footer{padding:44px 0 60px;border-top:2px solid var(--cream);margin-top:40px;
+  font-size:13.5px;font-weight:600}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr 1fr}}
+footer a{display:block;opacity:.72;text-decoration:none;margin-bottom:6px}
+footer a:hover{opacity:1}
+.tiny{opacity:.5;font-size:12px;margin-top:24px}
+</style></head><body>
+
+<nav><div class="wrap nav">
+  <a class="logo" href="#top">Hive<b>.</b></a>
+  <span class="sp"></span>
+  <a class="l" href="#shop">Shop</a>
+  <a class="l" href="#personalised">Personalised</a>
+  <a class="l" href="#free">Free stuff</a>
+  <a class="l" href="#about">About</a>
+  <a class="ig" href="https://instagram.com/happyhivekidss" target="_blank" rel="noopener">Instagram</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <div class="eyebrow">Every hive has one tiny troublemaker.</div>
+    <h1>It has gone quiet. You know the quiet.</h1>
+    <p class="sub">Buzz is nine months old and has a plan. You have both hands full. This is a channel, and a shop, about that exact moment.</p>
+    <div class="btns">
+      <a class="btn" href="#shop">See what he did now</a>
+      <a class="btn alt" href="#personalised">Put your child in a story</a>
+    </div>
+  </div>
+  <div class="heroart">
+    <img class="float" src="img/hive_loose_cover.png" alt="Buzz">
+  </div>
+</div></header>
+
+<div class="marq"><span>Made by hand, not by template &nbsp;•&nbsp; Instant download
+  &nbsp;•&nbsp; Print at home or we post it &nbsp;•&nbsp; Made in India
+  &nbsp;•&nbsp; New stories every week &nbsp;•&nbsp; Made by hand, not by template</span></div>
+
+<section id="shop"><div class="wrap">
+  <div class="eyebrow">The shop</div>
+  <h2 class="big">Things to read, colour and keep</h2>
+  <p class="sub2">Every one of these started as a story we made for the channel.
+     Download it in a minute, or let us print it and put it in the post.</p>
+  <div class="filters"><button class="f on" onclick="filt(this,'all')">Everything</button><button class="f" onclick="filt(this,'Books')">Books</button><button class="f" onclick="filt(this,'Colouring')">Colouring</button><button class="f" onclick="filt(this,'Gifts')">Gifts</button><button class="f" onclick="filt(this,'Personalised')">Personalised</button></div>
+  <div class="grid" id="grid">
+  <article class="card" data-cat="Books">
+    <a class="shot" href="#p-hive-loose-story" onclick="openP('hive-loose-story');return false">
+      <img src="img/hive_loose_cover.png" alt="Ten Minutes of Quiet" loading="lazy">
+      <span class="flag">New</span>
+    </a>
+    <div class="cbody">
+      <h3>Ten Minutes of Quiet</h3>
+      <p class="hook">It has gone quiet. You know the quiet. This is a book about that.</p>
+      <div class="crow">
+        <span class="price">₹349</span>
+        <button class="buy" onclick="openP('hive-loose-story')">Yes, this is my child</button>
+      </div>
+    </div>
+  </article>
+  <article class="card" data-cat="Colouring">
+    <a class="shot" href="#p-hive-colouring" onclick="openP('hive-colouring');return false">
+      <img src="img/hive_loose_colouring_cover.png" alt="Colour the Chaos" loading="lazy">
+      
+    </a>
+    <div class="cbody">
+      <h3>Colour the Chaos</h3>
+      <p class="hook">A colouring book that buys you ten minutes. Possibly twelve.</p>
+      <div class="crow">
+        <span class="price">₹199</span>
+        <button class="buy" onclick="openP('hive-colouring')">Buy ten quiet minutes</button>
+      </div>
+    </div>
+  </article>
+  <article class="card" data-cat="Gifts">
+    <a class="shot" href="#p-hive-survival" onclick="openP('hive-survival');return false">
+      <img src="img/hive_loose_cover.png" alt="The New Parent Survival Kit" loading="lazy">
+      <span class="flag">Best gift</span>
+    </a>
+    <div class="cbody">
+      <h3>The New Parent Survival Kit</h3>
+      <p class="hook">The present for the friend who has not finished a cup of tea since March.</p>
+      <div class="crow">
+        <span class="price">₹499</span>
+        <button class="buy" onclick="openP('hive-survival')">Send it to a tired friend</button>
+      </div>
+    </div>
+  </article>
+  <article class="card" data-cat="Personalised">
+    <a class="shot" href="#p-hive-personalised" onclick="openP('hive-personalised');return false">
+      <img src="img/hive_loose_cover.png" alt="Ten Minutes of Quiet: Your Edition" loading="lazy">
+      <span class="flag">Made for one child</span>
+    </a>
+    <div class="cbody">
+      <h3>Ten Minutes of Quiet: Your Edition</h3>
+      <p class="hook">Your toddler. Your kitchen. Your specific disaster.</p>
+      <div class="crow">
+        <span class="price">₹2,499</span>
+        <button class="buy" onclick="openP('hive-personalised')">Put your toddler in it</button>
+      </div>
+    </div>
+  </article></div>
+</div></section>
+
+<section id="personalised"><div class="wrap"><div class="perso">
+  <div>
+    <div class="eyebrow">The big one</div>
+    <h2>What if your child was in the story?</h2>
+    <p class="sub2" style="margin-top:12px">Tell us their name, their age and the one
+      thing they will not stop talking about. We write them into an adventure with
+      Buzz, illustrate it, and send you a book with their name on the cover.</p>
+    <p class="sub2" style="margin-top:12px"><b>Imagine their face when they turn the
+      first page and it says their name.</b></p>
+  </div>
+  <div class="pform">
+    <label>Your child's name</label>
+    <input id="cn" placeholder="Aarav" oninput="pv()">
+    <label>How old are they?</label>
+    <select id="ca" onchange="pv()"><option>1</option><option>2</option><option selected>3</option>
+      <option>4</option><option>5</option><option>6</option><option>7</option></select>
+    <label>What are they obsessed with right now?</label>
+    <input id="cl" placeholder="dinosaurs, the moon, buses…" oninput="pv()">
+    <div class="pv" id="pvout">Type a name and watch the cover change</div>
+    <a class="bigbuy" href="#" onclick="notify();return false">Create their story · ₹2,499</a>
+    <p class="trust">Made only after you order, so no two are the same.
+       Photos are optional, used once to draw the character, then deleted.</p>
+  </div>
+</div></div></section>
+
+<section id="free"><div class="wrap">
+  <div class="eyebrow">Free</div>
+  <h2 class="big">Take something for nothing</h2>
+  <p class="sub2">Print these tonight. No email needed, no catch.</p>
+  <div class="free" style="margin-top:24px">
+    <div class="tile"><h3>Two colouring pages</h3>
+      <p>Straight from the books. A4, print at home.</p>
+      <p style="margin-top:10px"><a href="free/colouring-sampler.pdf" download><b>Download →</b></a></p></div>
+    <div class="tile"><h3>A bedtime story</h3>
+      <p>The first three pages of Buzz's book, free to read.</p>
+      <p style="margin-top:10px"><a href="free/story-sampler.pdf" download><b>Download →</b></a></p></div>
+    <div class="tile"><h3>Phone wallpaper</h3>
+      <p>Because your lock screen could be nicer.</p>
+      <p style="margin-top:10px"><a href="free/wallpaper.png" download><b>Download →</b></a></p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap" style="max-width:760px">
+  <div class="eyebrow">Who makes this</div>
+  <h2 class="big">The Hive</h2>
+  <p class="sub2" style="margin-top:14px;max-width:none">Happy Hive is about the ten minutes between putting your child down and finding out what they have done.<br><br>Buzz is the tiny troublemaker. The hive is the rest of us: the parents, the grandparents, the person who has said 'we do not eat that' four hundred times this week. Everything we make comes out of what you tell us in the comments.</p>
+</div></section>
+
+<section><div class="wrap" style="max-width:760px">
+  <div class="eyebrow">Questions</div>
+  <h2 class="big" style="margin-bottom:20px">Before you ask</h2>
+  <details><summary>How fast do I get the digital books?</summary>
+    <p>Straight away. The download link is on the screen the second the payment
+       clears, and it is emailed to you as well.</p></details>
+  <details><summary>Can I print them at home?</summary>
+    <p>Yes. Everything is A4 and made to print on a normal home printer.
+       The colouring books deliberately use less ink.</p></details>
+  <details><summary>Do you post real books?</summary>
+    <p>Yes, printed and posted from within India, usually 4 to 7 days.
+       International orders print in the country they are going to.</p></details>
+  <details><summary>What happens to my child's photo?</summary>
+    <p>It is used once, to draw the character, and then deleted. We never put a
+       customer's child in our marketing without asking you first, in writing.</p></details>
+  <details><summary>What if my child hates it?</summary>
+    <p>Tell us and we will refund you. For personalised books we will redo it
+       once, free, if something is wrong.</p></details>
+</div></section>
+
+<section><div class="wrap"><div class="signup">
+  <h2>One story a week, free</h2>
+  <p>A new page, a colouring sheet, and whatever Buzz has got into this week.
+     No spam. Leave whenever you like.</p>
+  <form class="su" onsubmit="return sub(event)">
+    <input type="email" required placeholder="you@email.com" id="em">
+    <button>Send them</button>
+  </form>
+  <p style="margin-top:14px;font-size:13px;opacity:.7" id="submsg"></p>
+</div></div></section>
+
+
+<div class="sheet" id="p-hive-loose-story">
+  <button class="x" onclick="closeP()" aria-label="close">✕</button>
+  <div class="swrap">
+    <div class="sleft"><img class="big" src="img/hive_loose_cover.png" alt="Ten Minutes of Quiet">
+      <div class="strip"><img src="img/hive_loose_p2.png" alt="page from Ten Minutes of Quiet" loading="lazy"><img src="img/hive_loose_p3.png" alt="page from Ten Minutes of Quiet" loading="lazy"><img src="img/hive_loose_p5.png" alt="page from Ten Minutes of Quiet" loading="lazy"></div></div>
+    <div class="sright">
+      <span class="kicker">Picture book · 13 pages</span>
+      <h2>Ten Minutes of Quiet</h2>
+      <p class="lead">A field guide to what a toddler does in the ten minutes you looked away, written for the parent and readable to the child. Every page is something that has genuinely happened in your house this week.</p>
+      <h4>What's inside</h4><ul class="inside"><li>13 full-colour pages, A4</li><li>Ten scenes of entirely predictable chaos</li><li>An ending that will get you, fairly and squarely</li><li>Print-at-home PDF plus a tablet version</li></ul>
+      <h4>How it works</h4><p class="how">Pay, download, read it out loud, watch them recognise themselves. Printed copies available too.</p>
+      <button class="bigbuy soon" onclick="notify()">Yes, this is my child &nbsp;·&nbsp; ₹349</button>
+      <p class="trust">Instant download · Refund if it will not open · Written by parents who are tired</p>
+    </div>
+  </div>
+</div>
+<div class="sheet" id="p-hive-colouring">
+  <button class="x" onclick="closeP()" aria-label="close">✕</button>
+  <div class="swrap">
+    <div class="sleft"><img class="big" src="img/hive_loose_colouring_cover.png" alt="Colour the Chaos">
+      <div class="strip"><img src="img/hive_loose_p3.png" alt="page from Colour the Chaos" loading="lazy"><img src="img/hive_loose_p5.png" alt="page from Colour the Chaos" loading="lazy"><img src="img/hive_loose_p7.png" alt="page from Colour the Chaos" loading="lazy"></div></div>
+    <div class="sright">
+      <span class="kicker">Colouring book · 12 pages</span>
+      <h2>Colour the Chaos</h2>
+      <p class="lead">Twelve pages of Buzz getting into things, with the colour removed. Hand it over with crayons and go and drink something hot while it is still hot.</p>
+      <h4>What's inside</h4><ul class="inside"><li>12 A4 colouring pages</li><li>Big shapes, clean lines, low ink</li><li>A 'draw what YOUR toddler got into' page</li><li>Print it as often as you need</li></ul>
+      <h4>How it works</h4><p class="how">Download, print, hand over, sit down.</p>
+      <button class="bigbuy soon" onclick="notify()">Buy ten quiet minutes &nbsp;·&nbsp; ₹199</button>
+      <p class="trust">Instant download · Print again whenever · One family's use</p>
+    </div>
+  </div>
+</div>
+<div class="sheet" id="p-hive-survival">
+  <button class="x" onclick="closeP()" aria-label="close">✕</button>
+  <div class="swrap">
+    <div class="sleft"><img class="big" src="img/hive_loose_cover.png" alt="The New Parent Survival Kit">
+      <div class="strip"><img src="img/hive_loose_p2.png" alt="page from The New Parent Survival Kit" loading="lazy"><img src="img/hive_loose_p5.png" alt="page from The New Parent Survival Kit" loading="lazy"><img src="img/hive_loose_p7.png" alt="page from The New Parent Survival Kit" loading="lazy"></div></div>
+    <div class="sright">
+      <span class="kicker">Book + colouring + prints</span>
+      <h2>The New Parent Survival Kit</h2>
+      <p class="lead">The book, the colouring pages, and three printable signs for the fridge that say the things you say forty times a day. It is funny, and then at the end it is not, and that is rather the point.</p>
+      <h4>What's inside</h4><ul class="inside"><li>Ten Minutes of Quiet (13 pages)</li><li>Colour the Chaos (12 pages)</li><li>Three A4 fridge prints</li><li>A card page you can write in</li></ul>
+      <h4>How it works</h4><p class="how">One download, everything inside. Print what you want.</p>
+      <button class="bigbuy soon" onclick="notify()">Send it to a tired friend &nbsp;·&nbsp; ₹499</button>
+      <p class="trust">Instant download · Saves ₹49 · The gift people actually message you about</p>
+    </div>
+  </div>
+</div>
+<div class="sheet" id="p-hive-personalised">
+  <button class="x" onclick="closeP()" aria-label="close">✕</button>
+  <div class="swrap">
+    <div class="sleft"><img class="big" src="img/hive_loose_cover.png" alt="Ten Minutes of Quiet: Your Edition">
+      <div class="strip"><img src="img/hive_loose_p3.png" alt="page from Ten Minutes of Quiet: Your Edition" loading="lazy"><img src="img/hive_loose_p5.png" alt="page from Ten Minutes of Quiet: Your Edition" loading="lazy"><img src="img/hive_loose_p7.png" alt="page from Ten Minutes of Quiet: Your Edition" loading="lazy"></div></div>
+    <div class="sright">
+      <span class="kicker">Personalised book · made to order</span>
+      <h2>Ten Minutes of Quiet: Your Edition</h2>
+      <p class="lead">Tell us the thing your child actually does — the cupboard, the remote, the dog's bowl — and we write them into their own edition, with their name on the cover. Grandparents lose their minds over this one.</p>
+      <h4>What's inside</h4><ul class="inside"><li>16 full-colour pages, printed and bound</li><li>Your child's name and their real habits in the story</li><li>A dedication page you write</li><li>Posted to your door</li></ul>
+      <h4>How it works</h4><p class="how">Tell us their name, age and what they get into. Photo optional. Preview in 48 hours, then we print and post it.</p>
+      <button class="bigbuy soon" onclick="notify()">Put your toddler in it &nbsp;·&nbsp; ₹2,499</button>
+      <p class="trust">Photo used once then deleted · Free redo if we get it wrong · Cancel free within an hour</p>
+    </div>
+  </div>
+</div>
+
+<footer><div class="wrap"><div class="fgrid">
+  <div><div class="logo" style="font-size:20px">Hive<b>.</b></div>
+    <p style="opacity:.7;margin-top:8px;max-width:30ch">Books, prints and survival kits for the parents of very small, very determined people.</p></div>
+  <div><a href="#shop">Shop</a><a href="#personalised">Personalised books</a>
+    <a href="#free">Free downloads</a>
+    <a href="https://instagram.com/happyhivekidss" target="_blank" rel="noopener">Instagram</a></div>
+  <div><a href="legal.html#terms">Terms</a><a href="legal.html#privacy">Privacy</a>
+    <a href="legal.html#refunds">Refunds &amp; cancellations</a>
+    <a href="legal.html#shipping">Shipping</a><a href="legal.html#contact">Contact</a></div>
+</div>
+<p class="tiny">© 2026 Happy Hive. Stories, characters and illustrations are ours.
+   Made in India.</p></div></footer>
+
+<script>
+function filt(el,c){
+  document.querySelectorAll('.f').forEach(f=>f.classList.remove('on'));
+  el.classList.add('on');
+  document.querySelectorAll('.card').forEach(k=>{
+    k.style.display = (c==='all'||k.dataset.cat===c) ? '' : 'none';});
+}
+function openP(id){document.getElementById('p-'+id).classList.add('open');
+  document.body.style.overflow='hidden';}
+function closeP(){document.querySelectorAll('.sheet').forEach(s=>s.classList.remove('open'));
+  document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeP()});
+document.querySelectorAll('.sheet').forEach(s=>s.addEventListener('click',e=>{
+  if(e.target===s)closeP();}));
+function pv(){
+  const n=(document.getElementById('cn').value||'').trim();
+  const l=(document.getElementById('cl').value||'').trim();
+  const a=document.getElementById('ca').value;
+  const o=document.getElementById('pvout');
+  if(!n){o.innerHTML='Type a name and watch the cover change';return}
+  o.innerHTML='<b>'+n+' and Buzz'+(l?' and the '+l.split(',')[0].trim():'')+
+    '</b><br><span style="opacity:.7;font-weight:600">A story for a '+a+
+    '-year-old, made only for '+n+'</span>';
+}
+function notify(){alert("Almost ready. Leave your email at the bottom and you will be first to know when this opens.");}
+function sub(e){e.preventDefault();
+  const v=document.getElementById('em').value;
+  document.getElementById('submsg').textContent='Thank you. We have got '+v+'.';
+  try{localStorage.setItem('hive_email',v)}catch(_){}
+  return false;}
+</script></body></html>
