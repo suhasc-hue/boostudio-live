@@ -10,8 +10,8 @@
    "hero_sub": "Boo finds a door in the garden, a city under the bath water and a sky on her bedroom ceiling. Pick a world and go there together.",
    "promise": "Bedtime stories, colouring worlds and personalised books starring a small girl called Boo — and, if you like, your child beside her.",
    "cta": "Choose a world",
-   "community": "Boo's people",
-   "about": "Boo started as a two-minute film and turned into a small girl a lot of children now say goodnight to. She is curious, quietly brave, and almost always slightly muddy.<br><br>Everything here is drawn for one book and one book only. We don't recycle a picture across products, because a child can tell.",
+   "community": "Why we make these",
+   "about": "We are parents first.<br><br>We are storytellers by trade — and long before any of this was a shop, it was a bedtime. The stories we could buy were fine. They were just never quite the ones we wanted to read to our own children.<br><br>We wanted three things for them, and could not reliably find them on a shelf: <b>imagination</b>, the ability to invent something that isn't in the room. <b>Curiosity</b>, the instinct to look behind the sofa. And <b>kindness</b> — the part no worksheet teaches, the part that turns into how a child treats people for the rest of their life.<br><br>So we started drawing. Every story here is one we have read out loud in our own house first. If it does not work on our children — if they wriggle, or ask for a different one — it does not go on this site.<br><br>That is the whole promise. Made by parents, tested by the hardest audience there is.",
    "worlds": [
     {
      "n": "The Garden",
@@ -37,8 +37,8 @@
    "hero_sub": "Rico is one year old and he is investigating. Behind the sofa, under the flowerpot, inside the cardboard box that is definitely a rocket. Come and see what he finds.",
    "promise": "Books, colouring worlds and adventure kits for small people who want to know what is behind everything.",
    "cta": "See what he found",
-   "community": "The Hive",
-   "about": "Rico is an explorer. He is one year old, so his expeditions happen mostly between the kitchen and the hallway, but the discoveries are real ones: a gap behind the sofa, a family of worms under a flowerpot, a box that turns out to be a spaceship.<br><br>Happy Hive is for the parents of children like this. Not children to be kept quiet, children to be followed around. Everything we make is about what they find when nobody told them to look.",
+   "community": "Why we make these",
+   "about": "We are parents first.<br><br>We are storytellers by trade — and long before any of this was a shop, it was a bedtime. The stories we could buy were fine. They were just never quite the ones we wanted to read to our own children.<br><br>We wanted three things for them, and could not reliably find them on a shelf: <b>imagination</b>, the ability to invent something that isn't in the room. <b>Curiosity</b>, the instinct to look behind the sofa. And <b>kindness</b> — the part no worksheet teaches, the part that turns into how a child treats people for the rest of their life.<br><br>So we started drawing. Every story here is one we have read out loud in our own house first. If it does not work on our children — if they wriggle, or ask for a different one — it does not go on this site.<br><br>That is the whole promise. Made by parents, tested by the hardest audience there is.",
    "worlds": [
     {
      "n": "The House",
@@ -205,7 +205,7 @@
    "cat": "Gifts",
    "name": "The Whole Boo Library",
    "kicker": "3 books + colouring + poster",
-   "value": "The whole Boo shelf, one download",
+   "value": "All four, for the price of two and a bit",
    "flag": "Best value",
    "price": 799,
    "cta": "Give the whole lot",
@@ -224,32 +224,36 @@
    "how": "One download, five files. Print at home or send them to a print shop.",
    "trust": "Instant download · The one people give as a present",
    "file": "boo/boo_bundle.zip",
-   "cover": null
+   "cover": null,
+   "compare_at": 1196
   },
   {
    "id": "boo-personalised",
    "brand": "boo",
    "cat": "Personalised",
-   "name": "Your Child and Boo",
-   "kicker": "Made to order · printed and posted",
-   "value": "Your child is in the book, by name and by face",
+   "name": "The Boo Kit — made for one child",
+   "kicker": "Personalised kit · 8 pieces · ages 1-7",
+   "value": "Eight things, made for one child",
    "flag": "Made for one child",
    "price": 2499,
-   "cta": "Create their story",
+   "cta": "Make their kit",
    "world": "Yours",
    "personalised": true,
    "hook": "Their name on the cover. Their face in the pictures.",
-   "pitch": "We write your child into an adventure with Boo. Their name, their age, the thing they will not stop talking about this month. You send a photo, we draw them into the artwork in our style, and we print and post the book.",
-   "child_gets": "The extremely specific delight of being IN the book. This is the one grandparents cry at.",
+   "pitch": "Not one book — a whole kit built around your child. We write them into an adventure with Boo, then make everything else to match: their colouring book, their dot-to-dot, their name-tracing sheets, a door sign, and a certificate. It arrives in about 48 hours, with a gift card for whoever is handing it over.",
+   "child_gets": "Seeing themselves in a story. Children remember the first book they were inside of.",
    "inside": [
-    "16 full-colour printed pages, bound",
-    "Your child drawn into the illustrations",
-    "Their name on the cover and through the story",
-    "A dedication page you write",
-    "Posted to your door"
+    "Their storybook — their name and their face, drawn into the adventure",
+    "Their colouring book — eight scenes, same child",
+    "A dot-to-dot of their own character",
+    "Name-tracing sheets in their letters",
+    "A print-ready A3 door sign with their name",
+    "A Certificate of Imagination",
+    "A printable gift card for whoever is giving it",
+    "Everything delivered digitally in about 48 hours"
    ],
    "how": "Tell us their name and age, upload one clear photo, and pick a world. We send a preview within 48 hours. You approve it, then we print and post — about a week in India.",
-   "trust": "Photo used once, then deleted · Free redo if we get it wrong · Cancel free within an hour"
+   "trust": "Made in about 48 hours · Preview before we finish · Redone free if it is not right"
   },
   {
    "id": "ruru-house-story",
@@ -435,8 +439,8 @@
    "cat": "Gifts",
    "name": "The Explorer's Kit",
    "kicker": "3 books + colouring + poster + hat",
-   "value": "Everything, plus something to actually wear",
-   "flag": "Best gift",
+   "value": "All four, for the price of two and a bit",
+   "flag": "Best value",
    "price": 799,
    "cta": "Kit them out",
    "world": "All of them",
@@ -452,9 +456,10 @@
     "Print-and-fold explorer hat"
    ],
    "how": "One download, six files. Print the hat on ordinary paper; it takes about four minutes to fold.",
-   "trust": "Instant download · The hat is the bit they love",
+   "trust": "Instant download · The one people give as a present",
    "file": "hive/ruru_bundle.zip",
    "cover": null,
+   "compare_at": 1196,
    "available": false,
    "img": "img/ruru-bundle.webp",
    "pages": []
@@ -463,26 +468,29 @@
    "id": "ruru-personalised",
    "brand": "hive",
    "cat": "Personalised",
-   "name": "Your Child's Expedition",
-   "kicker": "Made to order · printed and posted",
-   "value": "Your child becomes the explorer, alongside Rico",
+   "name": "The Rico Kit — made for one child",
+   "kicker": "Personalised kit · 8 pieces · ages 1-7",
+   "value": "Eight things, made for one child",
    "flag": "Made for one child",
    "price": 2499,
-   "cta": "Send them exploring",
+   "cta": "Make their kit",
    "world": "Yours",
    "personalised": true,
-   "hook": "Your child, drawn into the expedition, name on the cover.",
-   "pitch": "Tell us where your child would most like to go and what they are into this month. We write and draw them into an expedition with Rico, in our style, and print it.",
-   "child_gets": "To be the explorer, by name, in a real printed book that lives on their shelf.",
+   "hook": "Their name on the cover. Their face in the pictures.",
+   "pitch": "Not one book — a whole kit built around your child. We write them into an adventure with Rico, then make everything else to match: their colouring book, their dot-to-dot, their name-tracing sheets, a door sign, and a certificate. It arrives in about 48 hours, with a gift card for whoever is handing it over.",
+   "child_gets": "Seeing themselves in a story. Children remember the first book they were inside of.",
    "inside": [
-    "16 full-colour printed pages, bound",
-    "Your child drawn into the artwork",
-    "Their name on the cover and through the story",
-    "A dedication page you write",
-    "Posted to your door"
+    "Their storybook — their name and their face, drawn into the adventure",
+    "Their colouring book — eight scenes, same child",
+    "A dot-to-dot of their own character",
+    "Name-tracing sheets in their letters",
+    "A print-ready A3 door sign with their name",
+    "A Certificate of Imagination",
+    "A printable gift card for whoever is giving it",
+    "Everything delivered digitally in about 48 hours"
    ],
    "how": "Tell us their name and age, upload one clear photo, pick the expedition. Preview in 48 hours, then we print and post it.",
-   "trust": "Photo used once, then deleted · Free redo if we get it wrong · Cancel free within an hour",
+   "trust": "Made in about 48 hours · Preview before we finish · Redone free if it is not right",
    "available": false,
    "img": "img/ruru-personalised.webp",
    "pages": []
@@ -572,5 +580,89 @@
    "available": true,
    "pages": []
   }
- ]
+ ],
+ "launch": {
+  "intro_until": "2026-09-15",
+  "note": "Introductory pricing while the shop is new. Prices step up after this date and stay there."
+ },
+ "giving": {
+  "percent": 10,
+  "line": "10% of every sale goes to educating a girl child.",
+  "sub": "Because of you, someone else gets to learn to read too.",
+  "status_note": "Recipient NGO being finalised — first transfer and receipt will be published on the giving page."
+ },
+ "rhyme": {
+  "boo": [
+   "One small girl, one giant sky,",
+   "one flower yawning ten feet high.",
+   "Open the page, the garden wakes —",
+   "see what one small watering makes."
+  ],
+  "hive": [
+   "Rico looks where nobody looked,",
+   "behind the sofa, under the book —",
+   "ten quiet minutes, one small boy,",
+   "and a cardboard box that turns into joy."
+  ]
+ },
+ "lifestyle": [
+  {
+   "img": "ls_bedtime",
+   "cap": "7:40pm. The bit of the day that actually works."
+  },
+  {
+   "img": "ls_colouring",
+   "cap": "Tuesday. Weather cancelled everything."
+  },
+  {
+   "img": "ls_print",
+   "cap": "Printed in the time it takes to find the crayons."
+  },
+  {
+   "img": "ls_fridge",
+   "cap": "It ends up here. It always ends up here."
+  },
+  {
+   "img": "ls_gift",
+   "cap": "The present people actually remember."
+  },
+  {
+   "img": "ls_lap",
+   "cap": "Same book, fourth night running. No notes."
+  }
+ ],
+ "art": {
+  "hero": "img/hero.webp",
+  "worlds": [
+   "img/world_1.webp",
+   "img/world_2.webp",
+   "img/world_3.webp"
+  ],
+  "lifestyle": [
+   {
+    "img": "img/ls_bedtime.webp",
+    "cap": "7:40pm. The bit of the day that actually works."
+   },
+   {
+    "img": "img/ls_colouring.webp",
+    "cap": "Tuesday. Weather cancelled everything."
+   },
+   {
+    "img": "img/ls_print.webp",
+    "cap": "Printed in the time it takes to find the crayons."
+   },
+   {
+    "img": "img/ls_fridge.webp",
+    "cap": "It ends up here. It always ends up here."
+   },
+   {
+    "img": "img/ls_gift.webp",
+    "cap": "The present people actually remember."
+   },
+   {
+    "img": "img/ls_lap.webp",
+    "cap": "Same book, fourth night running. No notes."
+   }
+  ]
+ }
 }

@@ -4,7 +4,7 @@
 <meta property="og:type" content="website"><meta property="og:title" content="Happy Hive — Where curiosity takes you.">
 <meta property="og:description" content="Books, colouring worlds and adventure kits for small people who want to know what is behind everything.">
 <meta property="og:url" content="https://suhasc-hue.github.io/boostudio-live/hive/">
-<meta property="og:image" content="https://suhasc-hue.github.io/boostudio-live/hive/img/ruru-house-story.webp">
+<meta property="og:image" content="https://suhasc-hue.github.io/boostudio-live/hive/img/hero.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#e07a00">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>">
@@ -167,6 +167,72 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:120;
   place-items:center;padding:26px;cursor:zoom-out}
 .lightbox.on{display:grid} .lightbox img{max-height:92vh;border-radius:10px}
+
+/* ---------- v2: hero art, worlds, lifestyle, cart, tour, motion ---------- */
+.heroart .real{border-radius:26px;box-shadow:0 26px 50px rgba(0,0,0,.16);width:100%;
+  object-fit:cover;aspect-ratio:16/10}
+.rhyme{margin-top:22px;font-family:'Baloo 2',cursive;font-size:16.5px;line-height:1.5;
+  color:var(--deep);opacity:.9}
+.world{padding:0;cursor:default}
+.world img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.world:hover img{transform:scale(1.04)}
+.world .wbody{padding:18px 20px 22px}
+.give{display:flex;align-items:center;gap:14px;background:var(--cream);border-radius:20px;
+  padding:16px 20px;margin-top:26px;font-weight:700;font-size:15px}
+.give .pct{font-family:'Baloo 2',cursive;font-size:30px;color:var(--deep);line-height:1}
+.give small{display:block;font-weight:600;opacity:.75;font-size:13px;margin-top:2px}
+.lsrow{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,1fr);gap:16px;
+  overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-top:24px}
+.lsrow figure{scroll-snap-align:start}
+.lsrow img{border-radius:18px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.lsrow figcaption{font-size:13.5px;font-weight:600;opacity:.75;margin-top:9px}
+.trustrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:26px}
+.trustrow div{background:#fff;border:2px solid var(--cream);border-radius:16px;padding:14px 16px;
+  font-weight:700;font-size:13.5px;display:flex;gap:10px;align-items:center}
+.trustrow span{font-size:20px}
+/* cart */
+.cartbtn{position:relative;background:var(--accent2);color:var(--ink);border:0;border-radius:99px;
+  padding:8px 15px;font:700 14px 'Quicksand',sans-serif;cursor:pointer}
+.cartbtn b{position:absolute;top:-7px;right:-7px;background:var(--deep);color:var(--btnink);
+  min-width:21px;height:21px;border-radius:99px;font-size:11.5px;display:grid;place-items:center;
+  transform:scale(0);transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
+.cartbtn b.on{transform:scale(1)}
+.cartbtn b.pop{animation:pop .45s cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{40%{transform:scale(1.45)}100%{transform:scale(1)}}
+.drawer{position:fixed;inset:0;z-index:90;background:rgba(30,20,40,.5);backdrop-filter:blur(4px);
+  display:none}
+.drawer.open{display:block}
+.dpanel{position:absolute;right:0;top:0;bottom:0;width:min(420px,100%);background:var(--paper);
+  padding:24px;overflow-y:auto;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.3,1)}
+.drawer.open .dpanel{transform:none}
+.ditem{display:flex;gap:12px;align-items:center;border-bottom:2px solid var(--cream);padding:12px 0}
+.ditem img{width:52px;border-radius:8px} .ditem .t{flex:1;font-weight:700;font-size:14px}
+.ditem button{background:none;border:0;font-size:17px;cursor:pointer;opacity:.45}
+.flyer{position:fixed;z-index:200;border-radius:10px;pointer-events:none;
+  transition:transform .58s cubic-bezier(.4,0,.5,1),opacity .58s;object-fit:cover}
+.conf{position:fixed;width:9px;height:9px;z-index:210;pointer-events:none;border-radius:2px}
+/* Boo's guided tour */
+#tour{position:fixed;z-index:150;left:0;top:0;display:none;align-items:flex-end;gap:10px;
+  pointer-events:none;transition:transform .9s cubic-bezier(.3,.7,.3,1),opacity .4s}
+#tour.on{display:flex}
+#tour img{width:88px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.28))}
+#tour .bub{background:#fff;border:2px solid var(--cream);border-radius:16px 16px 16px 4px;
+  padding:10px 14px;font-weight:700;font-size:14px;max-width:220px;
+  box-shadow:0 10px 24px rgba(0,0,0,.12);pointer-events:auto}
+#tour .bub i{display:block;font-style:normal;font-weight:600;font-size:12px;opacity:.6;margin-top:4px}
+/* motion */
+.rev{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.rev.in{opacity:1;transform:none}
+.sheet .swrap{transform:scale(.97);opacity:0;transition:transform .22s cubic-bezier(.2,.7,.3,1),opacity .22s}
+.sheet.open .swrap{transform:none;opacity:1}
+#toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,22px);background:var(--ink);
+  color:#fff;padding:12px 18px;border-radius:99px;font-weight:700;font-size:14px;z-index:220;
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rev{opacity:1;transform:none} #tour{display:none!important}
+}
 </style></head><body>
 
 <nav><div class="wrap nav">
@@ -175,11 +241,13 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
   <a class="l" href="#personalised">Personalised</a><a class="l keep" href="#free">Free</a>
   <a class="l" href="#about">About</a>
   <a class="ig" id="ig" target="_blank" rel="noopener">Instagram</a>
+  <button class="cartbtn" id="cartBtn" onclick="cartOpen()">Bag <b id="cartCount">0</b></button>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div><div class="eyebrow" id="eyebrow"></div><h1 id="h1"></h1>
     <p class="sub" id="hsub"></p>
+    <p class="rhyme" id="rhyme"></p>
     <div class="btns"><a class="btn" id="cta1" href="#shop"></a>
       <a class="btn alt" href="#personalised">Put your child in it</a></div></div>
   <div class="heroart"><img class="float" id="heroimg" alt=""></div>
@@ -205,6 +273,19 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
   <div class="filters" id="filters"></div>
   <div class="filters" id="agef"></div>
   <div class="grid" id="grid"></div>
+  <div class="giveslot"></div>
+  <div class="trustrow">
+    <div><span>⚡</span>Instant download, straight after you order</div>
+    <div><span>↩</span>Refund if it will not open</div>
+    <div><span>🔒</span>Your child's photo stays yours</div>
+  </div>
+</div></section>
+
+<section id="lsSection"><div class="wrap">
+  <div class="eyebrow">In real houses</div>
+  <h2 class="big">What it looks like on a Tuesday</h2>
+  <p class="sub2">Printed, coloured, stuck on the fridge, read for the fourth night running.</p>
+  <div class="lsrow" id="lsrow"></div>
 </div></section>
 
 <section id="personalised"><div class="wrap"><div class="perso">
@@ -278,6 +359,18 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
       <p>Because your lock screen could be nicer.</p>
       <p style="margin-top:10px"><a href="free/wallpaper.png" download><b>Download →</b></a></p></div>
   </div>
+  <div class="signup" style="margin-top:32px">
+    <h2>A free worksheet every week</h2>
+    <p>One printable, every week, plus whatever Boo and Rico got up to. Leave whenever you like.</p>
+    <a class="btn" id="suBtn" target="_blank" rel="noopener"
+       style="background:var(--accent);color:var(--ink)">Send me the free ones →</a>
+  </div>
+  <div class="tile" style="margin-top:22px;text-align:center">
+    <h3>Printed copies are coming</h3>
+    <p>Real paper books, posted to your door. We are choosing a printer now —
+       put your hand up and you will be first to know.</p>
+    <p style="margin-top:10px"><a id="printWait" target="_blank" rel="noopener"><b>Tell me when →</b></a></p>
+  </div>
 </div></section>
 
 <section id="about"><div class="wrap" style="max-width:760px">
@@ -312,12 +405,26 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
   <div id="sheetBody"></div></div>
 <div class="lightbox" id="lb" onclick="this.classList.remove('on')"><img alt="page"></div>
 
+<div class="drawer" id="drawer" onclick="if(event.target===this)cartClose()">
+  <div class="dpanel">
+    <button class="x" style="position:static;float:right" onclick="cartClose()">✕</button>
+    <h2 style="margin-bottom:6px">Your bag</h2>
+    <div id="ditems"></div>
+    <p style="margin-top:14px;font-weight:700;font-size:19px" id="dtotal"></p>
+    <a class="bigbuy" id="dorder" target="_blank" rel="noopener">Order these on Instagram</a>
+    <p class="trust">A real person replies, usually within the hour.</p>
+  </div>
+</div>
+
+<div id="tour"><img alt=""><div class="bub" onclick="tourEnd()"></div></div>
+<div id="toast"></div>
+
 <footer><div class="wrap"><div class="fgrid">
   <div><div class="logo" id="flogo" style="font-size:20px"></div>
     <p style="opacity:.7;margin-top:8px;max-width:30ch" id="promise"></p></div>
   <div><a href="#shop">Shop</a><a href="#personalised">Personalised books</a>
     <a href="#free">Free downloads</a><a id="igf" target="_blank" rel="noopener">Instagram</a></div>
-  <div><a href="legal.html#terms">Terms</a><a href="legal.html#privacy">Privacy</a>
+  <div><a href="giving.html">Our 10% pledge</a><a href="legal.html#terms">Terms</a><a href="legal.html#privacy">Privacy</a>
     <a href="legal.html#refunds">Refunds</a><a href="legal.html#shipping">Shipping</a>
     <a href="legal.html#contact">Contact</a></div>
 </div><p class="tiny">© 2026. Stories, characters and illustrations are ours. Made in India.</p>
@@ -346,7 +453,124 @@ async function boot(){
   // personalised SKUs render as a waitlist.
   PRODS = C.products.filter(p=>p.brand===BRAND && (p.available||p.personalised));
   paintBrand(); paintWorlds(); paintShop(); paintPerso();
+  paintLifestyle(); paintGiving(); paintRhyme(); cartPaint(); observeReveals();
   if(location.hash.startsWith('#p/')) openP(location.hash.slice(3));
+  setTimeout(tourStart, 1400);
+}
+/* ---------------- cart: adding something must feel like a win ------------- */
+let CART = (()=>{ try{ return JSON.parse(localStorage.getItem(BRAND+'_cart')||'[]'); }catch(_){ return []; } })();
+const cartSave=()=>{ try{ localStorage.setItem(BRAND+'_cart', JSON.stringify(CART)); }catch(_){} };
+function cartPaint(){
+  const n=CART.length, b=$('#cartCount');
+  b.textContent=n; b.classList.toggle('on', n>0);
+  const items=CART.map(id=>PRODS.find(p=>p.id===id)).filter(Boolean);
+  const total=items.reduce((s,p)=>s+p.price,0);
+  $('#ditems').innerHTML = items.length ? items.map(p=>`
+    <div class="ditem"><img src="${imgOf(p)}" alt="">
+      <div class="t">${p.name}<br><span style="font-weight:600;opacity:.6">${money(p.price)}</span></div>
+      <button onclick="cartRemove('${p.id}')" aria-label="remove">✕</button></div>`).join('')
+    : '<p style="opacity:.7;font-weight:600;padding:20px 0">Nothing in here yet.</p>';
+  $('#dtotal').textContent = items.length ? money(total) : '';
+  const msg = encodeURIComponent('Hi! I would like: '+items.map(p=>p.name).join(', ')+
+              ` — total ${'₹'}${total}. My email is:`);
+  $('#dorder').href = 'https://ig.me/m/'+BK.handle+'?text='+msg;
+  $('#dorder').style.display = items.length ? 'block' : 'none';
+}
+function cartRemove(id){ CART=CART.filter(x=>x!==id); cartSave(); cartPaint(); }
+function cartOpen(){ $('#drawer').classList.add('open'); document.body.style.overflow='hidden'; }
+function cartClose(){ $('#drawer').classList.remove('open'); document.body.style.overflow=''; }
+function addToCart(id, ev){
+  if(CART.includes(id)){ toast('Already in your bag'); return; }
+  CART.push(id); cartSave();
+  const p=PRODS.find(x=>x.id===id);
+  const src=(ev&&ev.target.closest('.card,.swrap')||document).querySelector('img');
+  if(src) flyToCart(src);
+  const b=$('#cartCount');
+  setTimeout(()=>{ cartPaint(); b.classList.add('pop'); confetti();
+    setTimeout(()=>b.classList.remove('pop'),480); }, 520);
+  toast('Added. That is tonight sorted.');
+}
+function flyToCart(img){
+  const a=img.getBoundingClientRect(), t=$('#cartBtn').getBoundingClientRect();
+  const f=document.createElement('img'); f.src=img.src; f.className='flyer';
+  f.style.cssText+=`left:${a.left}px;top:${a.top}px;width:${a.width}px;height:${a.height}px`;
+  document.body.appendChild(f);
+  requestAnimationFrame(()=>{
+    const dx=t.left+t.width/2-(a.left+a.width/2), dy=t.top+t.height/2-(a.top+a.height/2);
+    f.style.transform=`translate(${dx}px,${dy}px) scale(.08) rotate(-12deg)`; f.style.opacity='.2';
+  });
+  setTimeout(()=>f.remove(), 620);
+}
+function confetti(){
+  const t=$('#cartBtn').getBoundingClientRect();
+  const cols=[getComputedStyle(document.body).getPropertyValue('--accent'),
+              getComputedStyle(document.body).getPropertyValue('--accent2'),
+              getComputedStyle(document.body).getPropertyValue('--deep')];
+  for(let i=0;i<14;i++){
+    const c=document.createElement('i'); c.className='conf';
+    c.style.background=cols[i%3];
+    c.style.left=(t.left+t.width/2)+'px'; c.style.top=(t.top+t.height/2)+'px';
+    document.body.appendChild(c);
+    const ang=Math.random()*Math.PI*2, dist=46+Math.random()*70;
+    c.animate([{transform:'translate(0,0) rotate(0)',opacity:1},
+               {transform:`translate(${Math.cos(ang)*dist}px,${Math.sin(ang)*dist+42}px) rotate(${Math.random()*540}deg)`,opacity:0}],
+              {duration:760+Math.random()*380, easing:'cubic-bezier(.2,.7,.3,1)'}).onfinish=()=>c.remove();
+  }
+}
+function toast(m){ const e=$('#toast'); e.textContent=m; e.classList.add('on');
+  clearTimeout(e._t); e._t=setTimeout(()=>e.classList.remove('on'), 2600); }
+/* ---------------- Boo's little guided tour (once per visitor) ------------- */
+const TOUR=[{sel:'#shop', say:"This is everything we've made.", sub:'tap any book to look inside'},
+            {sel:'#free', say:'Take this one. It’s free.', sub:'no email needed'}];
+let tourStep=0;
+function tourStart(){
+  try{ if(localStorage.getItem(BRAND+'_tour')) return; }catch(_){ return; }
+  const el=$('#tour'); if(!el||!BK.tour_img) return;
+  el.querySelector('img').src=BK.tour_img;
+  el.classList.add('on'); tourHop();
+}
+function tourHop(){
+  const el=$('#tour'), step=TOUR[tourStep];
+  if(!step){ tourEnd(); return; }
+  const target=document.querySelector(step.sel); if(!target){ tourEnd(); return; }
+  const r=target.getBoundingClientRect();
+  el.style.transform=`translate(${Math.max(12,r.left+10)}px,${Math.min(innerHeight-150, r.top+40)}px)`;
+  el.querySelector('.bub').innerHTML=`${step.say}<i>${step.sub}</i>`;
+  tourStep++;
+  clearTimeout(el._t); el._t=setTimeout(tourHop, 4200);
+}
+function tourEnd(){ const el=$('#tour'); el.style.opacity='0';
+  setTimeout(()=>el.classList.remove('on'),420);
+  try{ localStorage.setItem(BRAND+'_tour','1'); }catch(_){} }
+/* ---------------- scroll reveals ---------------- */
+function observeReveals(){
+  const nodes=[...document.querySelectorAll('section .wrap > *, .card, .world, .lsrow figure')];
+  // FAIL-SAFE FIRST. .rev starts at opacity:0, so if IntersectionObserver never
+  // fires — unsupported, a non-compositing tab, a background render — the whole
+  // page would stay invisible. Anything not revealed within 1.2s is revealed
+  // unconditionally: the animation is a nicety, the content is not.
+  const revealAll=()=>nodes.forEach(n=>n.classList.add('in'));
+  if(!('IntersectionObserver' in window)){ revealAll(); return; }
+  const io=new IntersectionObserver(es=>es.forEach((e,i)=>{
+    if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('in'), i*55); io.unobserve(e.target); }
+  }),{rootMargin:'0px 0px -8% 0px'});
+  nodes.forEach(n=>{ n.classList.add('rev'); io.observe(n); });
+  setTimeout(revealAll, 1200);
+}
+function paintLifestyle(){
+  const ls=(C.art&&C.art.lifestyle)||[]; if(!ls.length){ $('#lsSection').style.display='none'; return; }
+  $('#lsrow').innerHTML = ls.map(x=>`<figure><img src="${x.img}" loading="lazy" alt="">
+    <figcaption>${x.cap}</figcaption></figure>`).join('');
+}
+function paintGiving(){
+  const g=C.giving; if(!g) return;
+  document.querySelectorAll('.giveslot').forEach(el=>{
+    el.innerHTML=`<div class="give"><span class="pct">${g.percent}%</span>
+      <div>${g.line}<small>${g.sub}</small></div></div>`;});
+}
+function paintRhyme(){
+  const r=(C.rhyme||{})[BRAND]; if(!r) return;
+  $('#rhyme').innerHTML = r.join('<br>');
 }
 function imgOf(p){ return p.img || ('img/'+p.id+'.png'); }
 function paintBrand(){
@@ -361,17 +585,21 @@ function paintBrand(){
   $('#aboutB').innerHTML = BK.about;
   $('#promise').textContent = BK.promise;
   $('#flogo').innerHTML = BK.short+'<b>.</b>';
-  const h=PRODS.find(p=>!p.personalised);
-  if(h){ const im=$('#heroimg'); im.dataset.alt='img/'+h.id+'.png';
-    im.onerror=()=>fb(im); im.src=imgOf(h); im.alt=BK.hero; }
+  const im=$('#heroimg');
+  if(C.art&&C.art.hero){ im.src=C.art.hero; im.className='real'; im.alt=BK.hero; }
+  else { const h=PRODS.find(p=>!p.personalised);
+    if(h){ im.dataset.alt='img/'+h.id+'.png'; im.onerror=()=>fb(im); im.src=imgOf(h); im.alt=BK.hero; } }
   $('#suH').textContent = 'One new world a week, free';
   $('#suP').textContent = 'A page, a colouring sheet, and wherever '+BK.hero+
     ' got to this week — over Instagram DM, where a real person replies.';
-  $('#suBtn').href = 'https://ig.me/m/'+BK.handle;
+  $('#suBtn').href = 'https://ig.me/m/'+BK.handle+'?text='+encodeURIComponent('Send me the free weekly worksheet please!');
+  $('#printWait').href = 'https://ig.me/m/'+BK.handle+'?text='+encodeURIComponent('Tell me when printed copies are ready!');
 }
 function paintWorlds(){
-  $('#worlds').innerHTML = BK.worlds.map(w=>
-    `<div class="world"><h3>${w.n}</h3><p>${w.d}</p></div>`).join('');
+  const wa=(C.art&&C.art.worlds)||[];
+  $('#worlds').innerHTML = BK.worlds.map((w,i)=>
+    `<div class="world">${wa[i]?`<img src="${wa[i]}" loading="lazy" alt="${w.n}">`:''}
+      <div class="wbody"><h3>${w.n}</h3><p>${w.d}</p></div></div>`).join('');
   $('#worldsK').textContent = BK.hero+"'s worlds";
 }
 function ageLabel(a){ return a[0]+'–'+a[1]+' yrs'; }
@@ -403,8 +631,8 @@ function paintShop(){
       <div class="cbody"><h3>${p.name}</h3>
         <div class="vline">${p.value}</div>
         <p class="hook">${p.hook}</p>
-        <div class="crow"><span class="price">${money(p.price)}</span>
-          <button class="buy">${p.personalised?'Waitlist':p.cta}</button></div></div>
+        <div class="crow"><span class="price">${money(p.price)}${p.compare_at?` <s style="opacity:.45;font-size:14px">${money(p.compare_at)}</s>`:''}</span>
+          <button class="buy" onclick="event.stopPropagation();${p.personalised?`openP('${p.id}')`:`addToCart('${p.id}',event)`}">${p.personalised?'Waitlist':'Add'}</button></div></div>
     </article>`).join('');
 }
 function openP(id){
@@ -418,7 +646,7 @@ function openP(id){
     ? `<a class="bigbuy" href="${p.buy}" target="_blank" rel="noopener">${p.cta} · ${moneyFull(p.price)}</a>`
     : p.personalised
       ? `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">Join the waitlist on Instagram</a>`
-      : `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">${p.cta} · ${moneyFull(p.price)} — DM to order</a>`;
+      : `<button class="bigbuy" onclick="addToCart('${p.id}',event)">${p.cta} · ${moneyFull(p.price)}</button>`;
   $('#sheetBody').innerHTML = `
     <div class="swrap">
       <div class="sleft"><img class="big" src="${imgOf(p)}" data-alt="img/${p.id}.png"
@@ -448,7 +676,7 @@ function paintPerso(){
   $('#persoPrice').textContent = moneyFull(p.price);
   $('#persoCta').textContent = 'Join the waitlist';
   const mc=$('#mockCover'); mc.dataset.alt='img/'+p.id+'.png';
-  mc.onerror=()=>fb(mc); mc.src=imgOf(p);
+  mc.onerror=()=>fb(mc); mc.src=(C.art&&C.art.perso)||imgOf(p);
   const worlds = [...new Set(PRODS.filter(x=>x.world&&x.world!=='All of them'&&x.world!=='Yours').map(x=>x.world))];
   $('#cw').innerHTML = worlds.map(w=>`<option>${w}</option>`).join('');
   pv();
