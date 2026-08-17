@@ -328,7 +328,14 @@ let C=null,BK=null,PRODS=[];
 const $=s=>document.querySelector(s);
 const PLACEHOLDER='data:image/svg+xml;utf8,'+encodeURIComponent(
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"><rect width="3" height="4" fill="#f3ead9"/></svg>');
-const money=n=>'₹'+n.toLocaleString('en-IN')+' · ~$'+Math.max(2,Math.round(n/87));
+/* One price, one currency. Showing "₹349 · ~$4" everywhere made every price
+   read like a conversion table (owner, 2026-08-17). Rupees are the default;
+   the dollar figure appears ONLY for visitors whose browser is not set to
+   India, and only in the product sheet, never on the grid. */
+const INR = !/-IN\b/.test(navigator.language||'') &&
+            (Intl.DateTimeFormat().resolvedOptions().timeZone||'') !== 'Asia/Calcutta';
+const money=n=>'₹'+n.toLocaleString('en-IN');
+const moneyFull=n=>INR?('₹'+n.toLocaleString('en-IN')+' · about $'+Math.max(2,Math.round(n/87))):money(n);
 function fb(img){ if(img.dataset.alt){ img.src=img.dataset.alt; img.dataset.alt=''; }
   else { img.onerror=null; img.src=PLACEHOLDER; } }
 
@@ -408,10 +415,10 @@ function openP(id){
       loading="lazy" onclick="zoom(this.src)"
       onerror="this.style.display='none'">`).join('');
   const buy = p.buy
-    ? `<a class="bigbuy" href="${p.buy}" target="_blank" rel="noopener">${p.cta} · ${money(p.price)}</a>`
+    ? `<a class="bigbuy" href="${p.buy}" target="_blank" rel="noopener">${p.cta} · ${moneyFull(p.price)}</a>`
     : p.personalised
       ? `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">Join the waitlist on Instagram</a>`
-      : `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">${p.cta} · ${money(p.price)} — DM to order</a>`;
+      : `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">${p.cta} · ${moneyFull(p.price)} — DM to order</a>`;
   $('#sheetBody').innerHTML = `
     <div class="swrap">
       <div class="sleft"><img class="big" src="${imgOf(p)}" data-alt="img/${p.id}.png"
@@ -438,7 +445,7 @@ function paintPerso(){
   const p = PRODS.find(x=>x.personalised); if(!p) return;
   $('#persoT').textContent = 'What if your child was in the story?';
   $('#persoP').innerHTML = p.pitch;
-  $('#persoPrice').textContent = money(p.price);
+  $('#persoPrice').textContent = moneyFull(p.price);
   $('#persoCta').textContent = 'Join the waitlist';
   const mc=$('#mockCover'); mc.dataset.alt='img/'+p.id+'.png';
   mc.onerror=()=>fb(mc); mc.src=imgOf(p);
