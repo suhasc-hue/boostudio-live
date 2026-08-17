@@ -13,178 +13,566 @@
    "community": "Boo's people",
    "about": "Boo started as a two-minute film and turned into a small girl a lot of children now say goodnight to. She is curious, quietly brave, and almost always slightly muddy.<br><br>Everything here is drawn for one book and one book only. We don't recycle a picture across products, because a child can tell.",
    "worlds": [
-    {"n": "The Garden", "d": "Where one watering can wakes up everything"},
-    {"n": "The Night Sky", "d": "Where the stars come down to be held"},
-    {"n": "The Deep", "d": "Where the bath becomes an ocean"}
+    {
+     "n": "The Garden",
+     "d": "Where one watering can wakes up everything"
+    },
+    {
+     "n": "The Night Sky",
+     "d": "Where the stars come down to be held"
+    },
+    {
+     "n": "The Deep",
+     "d": "Where the bath becomes an ocean"
+    }
    ]
   },
   "hive": {
    "name": "Happy Hive",
    "short": "Hive",
-   "hero": "Ruru",
+   "hero": "Rico",
    "handle": "happyhivekidss",
    "tagline": "Where curiosity takes you.",
    "hero_line": "He's found something.",
-   "hero_sub": "Ruru is one year old and he is investigating. Behind the sofa, under the flowerpot, inside the cardboard box that is definitely a rocket. Come and see what he finds.",
+   "hero_sub": "Rico is one year old and he is investigating. Behind the sofa, under the flowerpot, inside the cardboard box that is definitely a rocket. Come and see what he finds.",
    "promise": "Books, colouring worlds and adventure kits for small people who want to know what is behind everything.",
    "cta": "See what he found",
    "community": "The Hive",
-   "about": "Ruru is an explorer. He is one year old, so his expeditions happen mostly between the kitchen and the hallway, but the discoveries are real ones: a gap behind the sofa, a family of worms under a flowerpot, a box that turns out to be a spaceship.<br><br>Happy Hive is for the parents of children like this. Not children to be kept quiet, children to be followed around. Everything we make is about what they find when nobody told them to look.",
+   "about": "Rico is an explorer. He is one year old, so his expeditions happen mostly between the kitchen and the hallway, but the discoveries are real ones: a gap behind the sofa, a family of worms under a flowerpot, a box that turns out to be a spaceship.<br><br>Happy Hive is for the parents of children like this. Not children to be kept quiet, children to be followed around. Everything we make is about what they find when nobody told them to look.",
    "worlds": [
-    {"n": "The House", "d": "Where the most unexplored places are"},
-    {"n": "Out There", "d": "Where a cardboard box becomes a rocket"},
-    {"n": "The Green", "d": "Where every leaf hides something"}
+    {
+     "n": "The House",
+     "d": "Where the most unexplored places are"
+    },
+    {
+     "n": "Out There",
+     "d": "Where a cardboard box becomes a rocket"
+    },
+    {
+     "n": "The Green",
+     "d": "Where every leaf hides something"
+    }
    ]
   }
  },
-
  "products": [
   {
-   "id": "boo-garden-story", "brand": "boo", "cat": "Storybooks",
-   "name": "The Garden That Woke Up", "kicker": "Picture book · 10 spreads · ages 1-5",
-   "value": "A first story about cause and effect", "flag": "New", "price": 349,
-   "cta": "Read it tonight", "world": "The Garden",
+   "id": "boo-garden-story",
+   "brand": "boo",
+   "cat": "Storybooks",
+   "name": "The Garden That Woke Up",
+   "kicker": "Picture book · 10 spreads · ages 1-5",
+   "value": "A first story about cause and effect",
+   "flag": "New",
+   "price": 349,
+   "cta": "Read it tonight",
+   "world": "The Garden",
    "hook": "She waters one flower. The whole garden gets up.",
    "pitch": "Boo is handed a watering can and takes the job extremely seriously. One flower yawns, then stretches, then keeps stretching until it is taller than the gate. A story about doing one small thing and watching what it sets off.",
    "child_gets": "The idea that a small action can change everything around it — plus a ladybird that lands on your nose.",
-   "inside": ["10 illustrated spreads, A4", "A dedication page you can fill in", "Print-at-home PDF and a tablet version", "Reading time about 6 minutes"],
+   "inside": [
+    "10 illustrated spreads, A4",
+    "A dedication page you can fill in",
+    "Print-at-home PDF and a tablet version",
+    "Reading time about 6 minutes"
+   ],
    "how": "Pay, download, read. The link appears on screen straight away and lands in your inbox too.",
-   "trust": "Instant download · Refund if it will not open"
+   "trust": "Instant download · Refund if it will not open",
+   "file": "boo/boo_garden.pdf",
+   "cover": "boo/boo_garden_cover.png",
+   "ages": [
+    1,
+    5
+   ],
+   "available": true,
+   "img": "img/boo-garden-story.webp",
+   "pages": [
+    2,
+    3,
+    5,
+    7
+   ]
   },
   {
-   "id": "boo-stars-story", "brand": "boo", "cat": "Bedtime",
-   "name": "The Night the Stars Came Down", "kicker": "Bedtime book · 10 spreads · ages 1-5",
-   "value": "A wind-down book, built to end the day", "price": 349,
-   "cta": "Use it at bedtime", "world": "The Night Sky",
+   "id": "boo-stars-story",
+   "brand": "boo",
+   "cat": "Bedtime",
+   "name": "The Night the Stars Came Down",
+   "kicker": "Bedtime book · 10 spreads · ages 1-5",
+   "value": "A wind-down book, built to end the day",
+   "price": 349,
+   "cta": "Use it at bedtime",
+   "world": "The Night Sky",
    "hook": "A star gets tired of being far away.",
    "pitch": "Written to be read slowly. The sentences get shorter as the book goes on, the pictures get darker and warmer, and the last spread has almost no words at all. It is designed to land a child somewhere near sleep.",
    "child_gets": "A calm ending to the day, and a star of their own to hold on the last page.",
-   "inside": ["10 spreads that get quieter as they go", "Deliberately low-contrast night artwork", "A two-line goodnight to say together", "Reading time about 5 minutes"],
+   "inside": [
+    "10 spreads that get quieter as they go",
+    "Deliberately low-contrast night artwork",
+    "A two-line goodnight to say together",
+    "Reading time about 5 minutes"
+   ],
    "how": "Download once, keep forever. Read it on a tablet with the brightness low, or print it.",
-   "trust": "Instant download · Made for the last 10 minutes of the day"
+   "trust": "Instant download · Made for the last 10 minutes of the day",
+   "file": "boo/boo_stars.pdf",
+   "cover": "boo/boo_stars_cover.png",
+   "ages": [
+    1,
+    5
+   ],
+   "available": true,
+   "img": "img/boo-stars-story.webp",
+   "pages": [
+    2,
+    3,
+    5,
+    7
+   ]
   },
   {
-   "id": "boo-ocean-story", "brand": "boo", "cat": "Storybooks",
-   "name": "Under the Bath, an Ocean", "kicker": "Adventure book · 10 spreads · ages 2-6",
-   "value": "A braver, busier story for a slightly older child", "price": 349,
-   "cta": "Go under", "world": "The Deep",
+   "id": "boo-ocean-story",
+   "brand": "boo",
+   "cat": "Storybooks",
+   "name": "Under the Bath, an Ocean",
+   "kicker": "Adventure book · 10 spreads · ages 2-6",
+   "value": "A braver, busier story for a slightly older child",
+   "price": 349,
+   "cta": "Go under",
+   "world": "The Deep",
    "hook": "The plug comes out. Boo does not.",
    "pitch": "The noisiest book we make. Boo puts on a glass helmet and goes down, and there is a whole lit city under there with jellyfish for streetlamps. More happens per page than in the other two.",
    "child_gets": "A big loud adventure, and the idea that the ordinary thing in front of you might have a whole world under it.",
-   "inside": ["10 busy spreads full of things to find", "A count-the-jellyfish page", "Print-at-home PDF and tablet version", "Reading time about 7 minutes"],
+   "inside": [
+    "10 busy spreads full of things to find",
+    "A count-the-jellyfish page",
+    "Print-at-home PDF and tablet version",
+    "Reading time about 7 minutes"
+   ],
    "how": "Pay, download, read. Best read with a child who likes pointing at things.",
-   "trust": "Instant download · Refund if it will not open"
+   "trust": "Instant download · Refund if it will not open",
+   "file": "boo/boo_ocean.pdf",
+   "cover": "boo/boo_ocean_cover.png",
+   "ages": [
+    2,
+    6
+   ],
+   "available": true,
+   "img": "img/boo-ocean-story.webp",
+   "pages": [
+    2,
+    3,
+    5,
+    7
+   ]
   },
   {
-   "id": "boo-colouring", "brand": "boo", "cat": "Colouring",
-   "name": "Boo's Eight Worlds", "kicker": "Colouring book · 8 pages · ages 2-7",
-   "value": "Eight completely different places to colour", "flag": "Drawn by hand",
-   "price": 249, "cta": "Get the crayons out", "world": "All of them",
+   "id": "boo-cloud-story",
+   "brand": "boo",
+   "cat": "Bedtime",
+   "name": "Boo and the Cloud That Followed Her Home",
+   "kicker": "Bedtime book · 10 spreads · ages 1-5",
+   "value": "A bedtime story about looking after something small",
+   "flag": "New",
+   "price": 349,
+   "cta": "Follow it home",
+   "world": "The Garden",
+   "hook": "It was raining on exactly one flower.",
+   "pitch": "One morning Boo finds a cloud in the garden — small enough to sit in her hands, and busy raining on exactly one flower. When she goes in for the night, it follows. A bedtime story about a very small cloud and a very brave girl.",
+   "child_gets": "A cloud of their own to put to bed, and the idea that small things need looking after.",
+   "inside": [
+    "10 illustrated spreads, A4",
+    "Print-at-home PDF and a tablet version",
+    "A goodnight-to-the-cloud line to say together",
+    "Reading time about 5 minutes"
+   ],
+   "how": "Pay, download, read. The link appears on screen straight away and lands in your inbox too.",
+   "trust": "Instant download · Refund if it will not open",
+   "file": "boo/boo_cloud.pdf",
+   "cover": "boo/boo_cloud_cover.png",
+   "ages": [
+    1,
+    5
+   ],
+   "available": true,
+   "img": "img/boo-cloud-story.webp",
+   "pages": [
+    2,
+    3,
+    5,
+    7
+   ]
+  },
+  {
+   "id": "boo-colouring",
+   "brand": "boo",
+   "cat": "Colouring",
+   "name": "Boo's Eight Worlds",
+   "kicker": "Colouring book · 8 pages · ages 2-7",
+   "value": "Eight completely different places to colour",
+   "flag": "Drawn by hand",
+   "price": 249,
+   "cta": "Get the crayons out",
+   "world": "All of them",
    "hook": "Same girl. Space, ocean, dinosaurs, castles.",
    "pitch": "Not the storybook with the colour removed. These are eight new pictures drawn as colouring pages: bold closed outlines, big open areas, no shading to fight with. Boo goes to space, underwater, back in time, into a magic forest and four other places.",
    "child_gets": "Eight different places to be, and shapes big enough that a two-year-old can stay inside them.",
-   "inside": ["8 A4 pages, each a different world", "Thick clean outlines, no grey, no shading", "Low-ink design so your printer survives", "Print again as many times as you like"],
+   "inside": [
+    "8 A4 pages, each a different world",
+    "Thick clean outlines, no grey, no shading",
+    "Low-ink design so your printer survives",
+    "Print again as many times as you like"
+   ],
    "how": "Download, print whichever page they are in the mood for. It is your file forever.",
-   "trust": "Instant download · Print it again whenever · One family's use"
+   "trust": "Instant download · Print it again whenever · One family's use",
+   "file": "boo/boo_worlds_colouring.pdf",
+   "cover": null,
+   "ages": [
+    2,
+    7
+   ],
+   "available": false,
+   "img": "img/boo-colouring.webp",
+   "pages": []
   },
   {
-   "id": "boo-bundle", "brand": "boo", "cat": "Gifts",
-   "name": "The Whole Boo Library", "kicker": "3 books + colouring + poster",
-   "value": "Everything, for the price of two", "flag": "Best value", "price": 799,
-   "cta": "Give the whole lot", "world": "All of them",
+   "id": "boo-bundle",
+   "brand": "boo",
+   "cat": "Gifts",
+   "name": "The Whole Boo Library",
+   "kicker": "3 books + colouring + poster",
+   "value": "The whole Boo shelf, one download",
+   "flag": "Best value",
+   "price": 799,
+   "cta": "Give the whole lot",
+   "world": "All of them",
    "hook": "Three stories, eight colouring worlds, one poster.",
    "pitch": "The present people actually buy. All three storybooks, the eight-world colouring book and a print-ready A3 poster of the garden. It arrives as one download with a gift page you can write on.",
    "child_gets": "A shelf's worth of Boo in one go, and something to put on the wall.",
-   "inside": ["The Garden That Woke Up", "The Night the Stars Came Down", "Under the Bath, an Ocean", "Boo's Eight Worlds colouring book", "A3 poster, print-ready", "A gift note page"],
+   "inside": [
+    "The Garden That Woke Up",
+    "The Night the Stars Came Down",
+    "Under the Bath, an Ocean",
+    "Boo's Eight Worlds colouring book",
+    "A3 poster, print-ready",
+    "A gift note page"
+   ],
    "how": "One download, five files. Print at home or send them to a print shop.",
-   "trust": "Saves ₹497 · Instant download · The one people give as a present"
+   "trust": "Instant download · The one people give as a present",
+   "file": "boo/boo_bundle.zip",
+   "cover": null,
+   "available": false,
+   "img": "img/boo-bundle.webp",
+   "pages": []
   },
   {
-   "id": "boo-personalised", "brand": "boo", "cat": "Personalised",
-   "name": "Your Child and Boo", "kicker": "Made to order · printed and posted",
-   "value": "Your child is in the book, by name and by face", "flag": "Made for one child",
-   "price": 2499, "cta": "Create their story", "world": "Yours",
+   "id": "boo-personalised",
+   "brand": "boo",
+   "cat": "Personalised",
+   "name": "Your Child and Boo",
+   "kicker": "Made to order · printed and posted",
+   "value": "Your child is in the book, by name and by face",
+   "flag": "Made for one child",
+   "price": 2499,
+   "cta": "Create their story",
+   "world": "Yours",
    "personalised": true,
    "hook": "Their name on the cover. Their face in the pictures.",
    "pitch": "We write your child into an adventure with Boo. Their name, their age, the thing they will not stop talking about this month. You send a photo, we draw them into the artwork in our style, and we print and post the book.",
    "child_gets": "The extremely specific delight of being IN the book. This is the one grandparents cry at.",
-   "inside": ["16 full-colour printed pages, bound", "Your child drawn into the illustrations", "Their name on the cover and through the story", "A dedication page you write", "Posted to your door"],
+   "inside": [
+    "16 full-colour printed pages, bound",
+    "Your child drawn into the illustrations",
+    "Their name on the cover and through the story",
+    "A dedication page you write",
+    "Posted to your door"
+   ],
    "how": "Tell us their name and age, upload one clear photo, and pick a world. We send a preview within 48 hours. You approve it, then we print and post — about a week in India.",
-   "trust": "Photo used once, then deleted · Free redo if we get it wrong · Cancel free within an hour"
+   "trust": "Photo used once, then deleted · Free redo if we get it wrong · Cancel free within an hour",
+   "available": false,
+   "img": "img/boo-personalised.webp",
+   "pages": []
   },
-
   {
-   "id": "ruru-house-story", "brand": "hive", "cat": "Storybooks",
-   "name": "The Gap Behind the Sofa", "kicker": "Picture book · 10 spreads · ages 1-5",
-   "value": "A first story about investigating your own house", "flag": "New",
-   "price": 349, "cta": "Go and look", "world": "The House",
-   "hook": "Everyone walks past it. Ruru gets a torch.",
-   "pitch": "The most unexplored place in the world is about two feet behind your own sofa. Ruru takes a torch and goes in, and what he finds down there is worth the trip. A story about looking properly at the room you are already in.",
+   "id": "ruru-house-story",
+   "brand": "hive",
+   "cat": "Storybooks",
+   "name": "The Gap Behind the Sofa",
+   "kicker": "Picture book · 10 spreads · ages 1-5",
+   "value": "A first story about investigating your own house",
+   "flag": "New",
+   "price": 349,
+   "cta": "Go and look",
+   "world": "The House",
+   "hook": "Everyone walks past it. Rico gets a torch.",
+   "pitch": "The most unexplored place in the world is about two feet behind your own sofa. Rico takes a torch and goes in, and what he finds down there is worth the trip. A story about looking properly at the room you are already in.",
    "child_gets": "Permission to investigate their own house, and the idea that ordinary places have unexplored bits.",
-   "inside": ["10 illustrated spreads, A4", "A 'what's under YOUR sofa' page at the back", "Print-at-home PDF and tablet version", "Reading time about 6 minutes"],
+   "inside": [
+    "10 illustrated spreads, A4",
+    "A 'what's under YOUR sofa' page at the back",
+    "Print-at-home PDF and tablet version",
+    "Reading time about 6 minutes"
+   ],
    "how": "Pay, download, read. Then be prepared to move furniture.",
-   "trust": "Instant download · Refund if it will not open"
+   "trust": "Instant download · Refund if it will not open",
+   "file": "hive/hive_sofa.pdf",
+   "cover": "hive/hive_sofa_cover.png",
+   "ages": [
+    1,
+    5
+   ]
   },
   {
-   "id": "ruru-space-story", "brand": "hive", "cat": "Storybooks",
-   "name": "The Box That Was a Rocket", "kicker": "Picture book · 10 spreads · ages 2-6",
-   "value": "A story about imagination turning objects into worlds", "price": 349,
-   "cta": "Count down", "world": "Out There",
+   "id": "ruru-space-story",
+   "brand": "hive",
+   "cat": "Storybooks",
+   "name": "The Box That Was a Rocket",
+   "kicker": "Picture book · 10 spreads · ages 2-6",
+   "value": "A story about imagination turning objects into worlds",
+   "price": 349,
+   "cta": "Count down",
+   "world": "Out There",
    "hook": "It is a cardboard box. It is absolutely not a cardboard box.",
-   "pitch": "Ruru gets into a delivery box and it becomes a spaceship, properly, with a window and buttons and three planets. The book never once tells you it is pretend, which is the entire point.",
+   "pitch": "Rico gets into a delivery box and it becomes a spaceship, properly, with a window and buttons and three planets. The book never once tells you it is pretend, which is the entire point.",
    "child_gets": "The idea that anything lying around the house is one decision away from being a spaceship.",
-   "inside": ["10 spreads, A4", "A build-your-own-rocket page for a real box", "Print-at-home PDF and tablet version", "Reading time about 6 minutes"],
+   "inside": [
+    "10 spreads, A4",
+    "A build-your-own-rocket page for a real box",
+    "Print-at-home PDF and tablet version",
+    "Reading time about 6 minutes"
+   ],
    "how": "Download, read, then go and find a box. You will need a box.",
-   "trust": "Instant download · Comes with a cardboard project"
+   "trust": "Instant download · Comes with a cardboard project",
+   "file": "hive/hive_rocket.pdf",
+   "cover": "hive/hive_rocket_cover.png",
+   "ages": [
+    2,
+    6
+   ]
   },
   {
-   "id": "ruru-jungle-story", "brand": "hive", "cat": "Storybooks",
-   "name": "Two Leaves and a Waterfall", "kicker": "Picture book · 10 spreads · ages 2-6",
+   "id": "ruru-jungle-story",
+   "brand": "hive",
+   "cat": "Storybooks",
+   "name": "Two Leaves and a Waterfall",
+   "kicker": "Picture book · 10 spreads · ages 2-6",
    "value": "An outdoor story about finding things in the green",
-   "price": 349, "cta": "Push the leaves apart", "world": "The Green",
+   "price": 349,
+   "cta": "Push the leaves apart",
+   "world": "The Green",
    "hook": "Behind every big leaf there is something.",
-   "pitch": "Ruru goes out into the green and pushes two enormous leaves apart, and there is a clearing, a waterfall and a toucan who has clearly been waiting. The busiest, brightest book of the three.",
+   "pitch": "Rico goes out into the green and pushes two enormous leaves apart, and there is a clearing, a waterfall and a toucan who has clearly been waiting. The busiest, brightest book of the three.",
    "child_gets": "A reason to look under leaves and behind bushes for the rest of the week.",
-   "inside": ["10 lush spreads, A4", "A spot-the-creatures page", "Print-at-home PDF and tablet version", "Reading time about 7 minutes"],
+   "inside": [
+    "10 lush spreads, A4",
+    "A spot-the-creatures page",
+    "Print-at-home PDF and tablet version",
+    "Reading time about 7 minutes"
+   ],
    "how": "Pay, download, read. Ideally outside.",
-   "trust": "Instant download · Refund if it will not open"
+   "trust": "Instant download · Refund if it will not open",
+   "file": "hive/hive_jungle.pdf",
+   "cover": "hive/hive_jungle_cover.png",
+   "ages": [
+    2,
+    6
+   ]
   },
   {
-   "id": "ruru-colouring", "brand": "hive", "cat": "Colouring",
-   "name": "Ruru's Eight Expeditions", "kicker": "Colouring book · 8 pages · ages 2-7",
+   "id": "hive-quiet-story",
+   "brand": "hive",
+   "cat": "Storybooks",
+   "name": "Ten Minutes of Quiet",
+   "kicker": "Picture book · 10 spreads · ages 1-5",
+   "value": "A field guide to a suspiciously silent toddler",
+   "flag": "New",
+   "price": 349,
+   "cta": "Investigate the silence",
+   "world": "The House",
+   "hook": "It is 7:14 in the morning. The house has gone quiet.",
+   "pitch": "Every parent knows the sound of a toddler going quiet — it means something is happening. This book follows Rico through ten minutes nobody was watching, one minute at a time. A field guide to what happens when a toddler goes silent.",
+   "child_gets": "Being on Rico's side of the joke. This is the one parents laugh at too.",
+   "inside": [
+    "10 illustrated spreads, A4",
+    "Told minute by minute, like a field report",
+    "Print-at-home PDF and tablet version",
+    "Reading time about 6 minutes"
+   ],
+   "how": "Pay, download, read. Then go and check what your own toddler is doing.",
+   "trust": "Instant download · Refund if it will not open",
+   "file": "hive/hive_loose.pdf",
+   "cover": "hive/hive_loose_cover.png",
+   "ages": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "ruru-colouring",
+   "brand": "hive",
+   "cat": "Colouring",
+   "name": "Rico's Eight Expeditions",
+   "kicker": "Colouring book · 8 pages · ages 2-7",
    "value": "Eight expeditions to colour, from the attic to the ocean floor",
-   "flag": "Drawn by hand", "price": 249, "cta": "Send him somewhere", "world": "All of them",
+   "flag": "Drawn by hand",
+   "price": 249,
+   "cta": "Send him somewhere",
+   "world": "All of them",
    "hook": "The attic, space, underwater, dinosaurs, a treasure map.",
-   "pitch": "Eight new pictures drawn specifically as colouring pages, each one a different expedition. Bold closed outlines, big colourable areas, nothing fiddly. Ruru is exactly the same in all eight; everywhere he goes is different.",
+   "pitch": "Eight new pictures drawn specifically as colouring pages, each one a different expedition. Bold closed outlines, big colourable areas, nothing fiddly. Rico is exactly the same in all eight; everywhere he goes is different.",
    "child_gets": "Eight places to send him, and enough room on the page to make each one their own.",
-   "inside": ["8 A4 pages, eight different expeditions", "Thick clean outlines, no shading", "A draw-your-own-expedition page", "Low-ink, print as often as you like"],
+   "inside": [
+    "8 A4 pages, eight different expeditions",
+    "Thick clean outlines, no shading",
+    "A draw-your-own-expedition page",
+    "Low-ink, print as often as you like"
+   ],
    "how": "Download, print, hand over crayons.",
-   "trust": "Instant download · Print again whenever · One family's use"
+   "trust": "Instant download · Print again whenever · One family's use",
+   "file": "hive/hive_expeditions_colouring.pdf",
+   "cover": null,
+   "ages": [
+    2,
+    7
+   ]
   },
   {
-   "id": "ruru-bundle", "brand": "hive", "cat": "Gifts",
-   "name": "The Explorer's Kit", "kicker": "3 books + colouring + poster + hat",
-   "value": "Everything, plus something to actually wear", "flag": "Best gift",
-   "price": 799, "cta": "Kit them out", "world": "All of them",
+   "id": "ruru-bundle",
+   "brand": "hive",
+   "cat": "Gifts",
+   "name": "The Explorer's Kit",
+   "kicker": "3 books + colouring + poster + hat",
+   "value": "Everything, plus something to actually wear",
+   "flag": "Best gift",
+   "price": 799,
+   "cta": "Kit them out",
+   "world": "All of them",
    "hook": "Three books, eight expeditions, and a paper explorer hat that really works.",
-   "pitch": "All three Ruru books, the eight-expedition colouring book, an A3 poster, and a print-and-fold explorer hat with instructions. The hat is the bit children go for first, every time.",
+   "pitch": "All three Rico books, the eight-expedition colouring book, an A3 poster, and a print-and-fold explorer hat with instructions. The hat is the bit children go for first, every time.",
    "child_gets": "Three stories, eight colouring expeditions, a poster and a hat they will refuse to take off.",
-   "inside": ["The Gap Behind the Sofa", "The Box That Was a Rocket", "Two Leaves and a Waterfall", "Ruru's Eight Expeditions", "A3 poster, print-ready", "Print-and-fold explorer hat"],
+   "inside": [
+    "The Gap Behind the Sofa",
+    "The Box That Was a Rocket",
+    "Two Leaves and a Waterfall",
+    "Rico's Eight Expeditions",
+    "A3 poster, print-ready",
+    "Print-and-fold explorer hat"
+   ],
    "how": "One download, six files. Print the hat on ordinary paper; it takes about four minutes to fold.",
-   "trust": "Saves ₹497 · Instant download · The hat is the bit they love"
+   "trust": "Instant download · The hat is the bit they love",
+   "file": "hive/ruru_bundle.zip",
+   "cover": null
   },
   {
-   "id": "ruru-personalised", "brand": "hive", "cat": "Personalised",
-   "name": "Your Child's Expedition", "kicker": "Made to order · printed and posted",
-   "value": "Your child becomes the explorer, alongside Ruru", "flag": "Made for one child",
-   "price": 2499, "cta": "Send them exploring", "world": "Yours",
+   "id": "ruru-personalised",
+   "brand": "hive",
+   "cat": "Personalised",
+   "name": "Your Child's Expedition",
+   "kicker": "Made to order · printed and posted",
+   "value": "Your child becomes the explorer, alongside Rico",
+   "flag": "Made for one child",
+   "price": 2499,
+   "cta": "Send them exploring",
+   "world": "Yours",
    "personalised": true,
    "hook": "Your child, drawn into the expedition, name on the cover.",
-   "pitch": "Tell us where your child would most like to go and what they are into this month. We write and draw them into an expedition with Ruru, in our style, and print it.",
+   "pitch": "Tell us where your child would most like to go and what they are into this month. We write and draw them into an expedition with Rico, in our style, and print it.",
    "child_gets": "To be the explorer, by name, in a real printed book that lives on their shelf.",
-   "inside": ["16 full-colour printed pages, bound", "Your child drawn into the artwork", "Their name on the cover and through the story", "A dedication page you write", "Posted to your door"],
+   "inside": [
+    "16 full-colour printed pages, bound",
+    "Your child drawn into the artwork",
+    "Their name on the cover and through the story",
+    "A dedication page you write",
+    "Posted to your door"
+   ],
    "how": "Tell us their name and age, upload one clear photo, pick the expedition. Preview in 48 hours, then we print and post it.",
    "trust": "Photo used once, then deleted · Free redo if we get it wrong · Cancel free within an hour"
+  },
+  {
+   "id": "boo-dots",
+   "brand": "boo",
+   "cat": "Activity",
+   "name": "Boo, Dot by Dot",
+   "kicker": "Dot-to-dot book · 12 pages · ages 3-6",
+   "value": "Join the dots and Boo appears",
+   "flag": "The shape is the surprise",
+   "price": 199,
+   "cta": "Reveal her",
+   "world": "All of them",
+   "hook": "Every page hides her somewhere new.",
+   "pitch": "Each page is a numbered trail traced from a real frame of Boo's films — not clip-art. Early pages have 20 big dots and a faint ghost outline so little hands can't get lost; the last pages have 60 dots and no help at all. The moment the pencil closes the loop, the child sees who they drew.",
+   "child_gets": "The magic moment where scribble becomes Boo — twelve times, harder each time.",
+   "inside": [
+    "12 A4 pages, difficulty ramps 20 to 60 dots",
+    "First pages carry a faint ghost outline for ages 3-4",
+    "A star marks dot 1 on every page",
+    "Traced from the films, so the reveal really is her",
+    "Print as many times as you like"
+   ],
+   "file": "boo/boo_dots.pdf",
+   "cover": null,
+   "ages": [
+    3,
+    6
+   ],
+   "available": false,
+   "pages": []
+  },
+  {
+   "id": "boo-activity",
+   "brand": "boo",
+   "cat": "Activity",
+   "name": "The Boo Rainy-Day Pack",
+   "kicker": "Activity pack · 20 pages · ages 2-6",
+   "value": "One download, a whole quiet afternoon",
+   "flag": "Best value",
+   "price": 349,
+   "cta": "Save the afternoon",
+   "world": "All of them",
+   "hook": "Colouring + dots + mazes + matching, one PDF.",
+   "pitch": "The pack for the afternoon the weather cancels: five colouring pages, five dot-to-dots, five simple mazes through Boo's worlds, and five match-the-pairs pages with her friends. Ordered easy to hard so one pack fits a two-year-old and their five-year-old sister.",
+   "child_gets": "Twenty pages of different kinds of playing, all in Boo's world.",
+   "inside": [
+    "20 A4 pages across four activity types",
+    "Difficulty ordered, so siblings share one pack",
+    "Low-ink outlines throughout",
+    "Print forever — it's yours"
+   ],
+   "file": "boo/boo_activity.pdf",
+   "cover": null,
+   "ages": [
+    2,
+    6
+   ],
+   "available": false,
+   "pages": []
+  },
+  {
+   "id": "ruru-dots",
+   "brand": "hive",
+   "cat": "Activity",
+   "name": "Where Did Rico Go?",
+   "kicker": "Dot-to-dot book · 12 pages · ages 3-6",
+   "value": "Join the dots to find out where Rico wandered",
+   "flag": "The shape is the surprise",
+   "price": 199,
+   "cta": "Find Rico",
+   "world": "All of them",
+   "hook": "The dots know where he is.",
+   "pitch": "Rico is always somewhere — the ball pit, the beach, halfway up the bottom step. Each page is a numbered trail traced from a real moment in his films, and the child finds out where he went by drawing it. Early pages are 20 dots with a ghost outline; the last ones make the big kids work for it.",
+   "child_gets": "The reveal — every page ends with 'THERE he is!'",
+   "inside": [
+    "12 A4 pages, 20 to 60 dots",
+    "Ghost outlines on the first pages for little ones",
+    "A star marks dot 1 on every page",
+    "Traced from the films, so it's really him",
+    "Unlimited printing"
+   ],
+   "file": "hive/hive_dots.pdf",
+   "cover": null,
+   "ages": [
+    3,
+    6
+   ]
   }
  ]
 }

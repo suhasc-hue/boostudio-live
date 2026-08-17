@@ -1,11 +1,18 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Loading…</title><meta name="description" content="A children's creative world.">
+<title>Happy Hive — Where curiosity takes you.</title><meta name="description" content="Books, colouring worlds and adventure kits for small people who want to know what is behind everything.">
+<meta property="og:type" content="website"><meta property="og:title" content="Happy Hive — Where curiosity takes you.">
+<meta property="og:description" content="Books, colouring worlds and adventure kits for small people who want to know what is behind everything.">
+<meta property="og:url" content="https://suhasc-hue.github.io/boostudio-live/hive/">
+<meta property="og:image" content="https://suhasc-hue.github.io/boostudio-live/hive/img/ruru-house-story.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#e07a00">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@500;600;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--ink:#26333f;--paper:#fffdf6;--cream:#fff4e0;--accent:#ff9a1f;
-  --accent2:#4bb3a5;--deep:#e07a00}
+  --accent2:#4bb3a5;--deep:#e07a00;--btnink:#26333f}
 html{scroll-behavior:smooth}
 body{font-family:'Quicksand',system-ui,sans-serif;color:var(--ink);background:var(--paper);
   line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -19,8 +26,8 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,250,243,.94);
   text-decoration:none;font-weight:700} .logo b{color:var(--accent)}
 .nav .sp{flex:1} .nav a.l{text-decoration:none;font-weight:700;font-size:14.5px;opacity:.8}
 .nav a.l:hover{opacity:1;color:var(--deep)}
-@media(max-width:820px){.nav a.l{display:none}}
-.nav .ig{background:var(--accent);color:#fff;padding:8px 15px;border-radius:99px;
+@media(max-width:820px){.nav a.l{display:none}.nav a.l.keep{display:inline}}
+.nav .ig{background:var(--accent);color:var(--ink);padding:8px 15px;border-radius:99px;
   text-decoration:none;font-weight:700;font-size:14px}
 .hero{background:radial-gradient(1200px 520px at 50% -8%, var(--cream) 0%, var(--paper) 62%)}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;
@@ -30,7 +37,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,250,243,.94);
 .eyebrow{font-weight:700;font-size:12.5px;letter-spacing:2.4px;text-transform:uppercase;
   color:var(--accent);margin-bottom:10px}
 .btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
-.btn{background:var(--deep);color:#fff;border:0;padding:14px 24px;border-radius:99px;
+.btn{background:var(--deep);color:var(--btnink);border:0;padding:14px 24px;border-radius:99px;
   font:700 15.5px 'Quicksand',sans-serif;cursor:pointer;text-decoration:none;
   box-shadow:0 6px 0 rgba(0,0,0,.12)}
 .btn:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.12)}
@@ -38,8 +45,9 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,250,243,.94);
 .heroart img{border-radius:26px;box-shadow:0 26px 50px rgba(0,0,0,.16);transform:rotate(-1.5deg)}
 .float{animation:fl 7s ease-in-out infinite} @keyframes fl{50%{transform:translateY(-12px) rotate(-1.5deg)}}
 @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.heroart{order:-1}}
-.marq{background:var(--deep);color:#fff;padding:11px 0;font-weight:700;font-size:14px;
-  overflow:hidden;white-space:nowrap}
+.marq{background:var(--deep);color:var(--btnink);padding:11px 0;font-weight:700;font-size:14px;
+  text-align:center}
+@media(max-width:640px){.marq{white-space:normal;padding:9px 14px}}
 section{padding:60px 0}
 h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
 .sub2{font-size:16.5px;opacity:.8;font-weight:600;max-width:58ch}
@@ -52,7 +60,8 @@ h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
 .world:after{content:"";position:absolute;right:-24px;bottom:-24px;width:80px;height:80px;
   border-radius:50%;background:var(--accent2);opacity:.18}
 /* shop */
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 22px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 10px}
+.filters+.filters{margin-top:0;margin-bottom:22px}
 .f{border:2px solid var(--cream);background:#fff;padding:8px 15px;border-radius:99px;
   font:700 13.5px 'Quicksand',sans-serif;cursor:pointer;color:var(--ink)}
 .f.on{background:var(--ink);color:#fff;border-color:var(--ink)}
@@ -62,7 +71,7 @@ h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
 .card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(0,0,0,.1)}
 .shot{position:relative;background:var(--cream)}
 .shot img{aspect-ratio:3/4;object-fit:cover;width:100%}
-.flag{position:absolute;top:11px;left:11px;background:var(--accent);color:#fff;
+.flag{position:absolute;top:11px;left:11px;background:var(--accent);color:var(--ink);
   font:700 11.5px 'Quicksand',sans-serif;padding:5px 11px;border-radius:99px}
 .wtag{position:absolute;bottom:11px;left:11px;background:rgba(0,0,0,.55);color:#fff;
   font:700 11px 'Quicksand',sans-serif;padding:4px 10px;border-radius:99px;backdrop-filter:blur(3px)}
@@ -70,8 +79,8 @@ h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
 .vline{font-size:12.5px;font-weight:700;color:var(--deep);margin-bottom:6px}
 .hook{font-size:14px;opacity:.78;font-weight:600;min-height:38px}
 .crow{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
-.price{font-family:'Baloo 2',cursive;font-size:19px;color:var(--deep)}
-.buy{background:var(--accent);color:#fff;border:0;padding:9px 15px;border-radius:99px;
+.price{font-family:'Baloo 2',cursive;font-size:17px;color:var(--deep)}
+.buy{background:var(--accent);color:var(--ink);border:0;padding:9px 15px;border-radius:99px;
   font:700 13.5px 'Quicksand',sans-serif;cursor:pointer}
 /* sheet */
 .sheet{display:none;position:fixed;inset:0;z-index:80;background:rgba(30,20,40,.55);
@@ -99,7 +108,7 @@ h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
 .inside li:before{content:"●";position:absolute;left:0;color:var(--accent2)}
 .how{font-size:14.5px;font-weight:600;opacity:.85}
 .bigbuy{display:block;width:100%;text-align:center;margin-top:20px;background:var(--deep);
-  color:#fff;border:0;padding:16px;border-radius:99px;font:700 16px 'Quicksand',sans-serif;
+  color:var(--btnink);border:0;padding:16px;border-radius:99px;font:700 16px 'Quicksand',sans-serif;
   cursor:pointer;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,.14)}
 .trust{font-size:12.5px;opacity:.65;text-align:center;margin-top:10px;font-weight:600}
 .x{position:fixed;top:18px;right:20px;background:#fff;border:0;width:40px;height:40px;
@@ -111,7 +120,7 @@ h2.big{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.5px;margin-bottom:10px}
 .steps{counter-reset:s;margin-top:18px}
 .step{counter-increment:s;position:relative;padding-left:42px;margin-bottom:16px}
 .step:before{content:counter(s);position:absolute;left:0;top:-2px;width:28px;height:28px;
-  border-radius:50%;background:var(--accent);color:#fff;font:700 14px sans-serif;
+  border-radius:50%;background:var(--accent);color:var(--ink);font:700 14px sans-serif;
   display:grid;place-items:center}
 .step b{display:block;font-size:15.5px} .step span{font-size:14px;opacity:.78;font-weight:600}
 .pform{background:#fff;border-radius:22px;padding:22px}
@@ -149,10 +158,6 @@ details p{margin-top:9px;font-size:14.5px;opacity:.85;font-weight:600}
 .signup{background:var(--ink);color:#fff;border-radius:28px;padding:36px;text-align:center}
 .signup h2{color:#fff;font-size:clamp(22px,3vw,30px)}
 .signup p{opacity:.82;margin:10px auto 20px;max-width:48ch;font-weight:600}
-.su{display:flex;gap:9px;max-width:430px;margin:0 auto}
-.su input{flex:1;border:0;border-radius:99px;padding:13px 18px;font:600 15px sans-serif}
-.su button{background:var(--accent);color:#fff;border:0;border-radius:99px;padding:13px 22px;
-  font:700 15px 'Quicksand',sans-serif;cursor:pointer}
 footer{padding:44px 0 60px;border-top:2px solid var(--cream);margin-top:40px;font-size:13.5px;
   font-weight:600}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
@@ -166,8 +171,8 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
 
 <nav><div class="wrap nav">
   <a class="logo" id="logo" href="#top">·</a><span class="sp"></span>
-  <a class="l" href="#worlds-s">Worlds</a><a class="l" href="#shop">Shop</a>
-  <a class="l" href="#personalised">Personalised</a><a class="l" href="#free">Free</a>
+  <a class="l" href="#worlds-s">Worlds</a><a class="l keep" href="#shop">Shop</a>
+  <a class="l" href="#personalised">Personalised</a><a class="l keep" href="#free">Free</a>
   <a class="l" href="#about">About</a>
   <a class="ig" id="ig" target="_blank" rel="noopener">Instagram</a>
 </div></nav>
@@ -180,9 +185,8 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
   <div class="heroart"><img class="float" id="heroimg" alt=""></div>
 </div></header>
 
-<div class="marq"><span>Every book drawn for that book only &nbsp;•&nbsp; Instant download
-  &nbsp;•&nbsp; Printed and posted in India &nbsp;•&nbsp; New world every week
-  &nbsp;•&nbsp; Nothing reused, nothing recycled</span></div>
+<div class="marq"><span>Instant download &nbsp;•&nbsp; Every book drawn for that book only
+  &nbsp;•&nbsp; Made in India, with love</span></div>
 
 <section id="worlds-s"><div class="wrap">
   <div class="eyebrow" id="worldsK"></div>
@@ -199,6 +203,7 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
      child down, the colouring book sends them somewhere new, the personalised one
      puts them in it.</p>
   <div class="filters" id="filters"></div>
+  <div class="filters" id="agef"></div>
   <div class="grid" id="grid"></div>
 </div></section>
 
@@ -250,11 +255,12 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
         <div class="ttl" id="mockTitle"></div></div>
       <p id="mockNote"></p>
     </div>
-    <button class="bigbuy" onclick="notify()"><span id="persoCta"></span> ·
+    <button class="bigbuy" onclick="waitlist()"><span id="persoCta"></span> ·
       <span id="persoPrice"></span></button>
-    <p class="privacy">Your photo stays on your device until you order. We use it once to
-      draw the character, delete it within 30 days, and never put a customer's child in
-      our marketing without asking you in writing first.</p>
+    <p class="privacy">This book opens for orders soon — the waitlist lives in our Instagram
+      DMs, where a real person replies. Your photo stays on your device until you order. We
+      use it once to draw the character, delete it within 30 days, and never put a customer's
+      child in our marketing without asking you in writing first.</p>
   </div>
 </div></div></section>
 
@@ -286,25 +292,20 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
     <p>No. Every book, and every page of the colouring book, is drawn for that book
        alone. That is the whole reason they take as long as they do.</p></details>
   <details><summary>How fast do I get the digital books?</summary>
-    <p>Straight away. The link is on screen the moment payment clears and it is emailed
-       to you as well.</p></details>
+    <p>Straight away once checkout is live. Right now, order over Instagram DM and a
+       real person sends the file back the same day.</p></details>
   <details><summary>What happens to my child's photo?</summary>
     <p>It stays on your device until you place the order. We use it once to draw the
        character, delete it within 30 days, and never use it in marketing without
        written permission.</p></details>
-  <details><summary>Do you post real books?</summary>
-    <p>Yes, printed and posted inside India, usually 4 to 7 days. International orders
-       print in the destination country.</p></details>
   <details><summary>What if my child hates it?</summary>
     <p>Tell us and we refund you. Personalised books we will redo once, free.</p></details>
 </div></section>
 
 <section><div class="wrap"><div class="signup">
   <h2 id="suH"></h2><p id="suP"></p>
-  <form class="su" onsubmit="return sub(event)">
-    <input type="email" required placeholder="you@email.com" id="em">
-    <button>Send them</button></form>
-  <p style="margin-top:14px;font-size:13px;opacity:.7" id="submsg"></p>
+  <a class="btn" id="suBtn" target="_blank" rel="noopener"
+     style="background:var(--accent);color:var(--ink)">Say hi on Instagram →</a>
 </div></div></section>
 
 <div class="sheet" id="sheet"><button class="x" onclick="closeP()">✕</button>
@@ -325,16 +326,23 @@ footer a:hover{opacity:1} .tiny{opacity:.5;font-size:12px;margin-top:24px}
 <script>const BRAND='hive';
 let C=null,BK=null,PRODS=[];
 const $=s=>document.querySelector(s);
-const money=n=>'₹'+n.toLocaleString('en-IN');
+const PLACEHOLDER='data:image/svg+xml;utf8,'+encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 4"><rect width="3" height="4" fill="#f3ead9"/></svg>');
+const money=n=>'₹'+n.toLocaleString('en-IN')+' · ~$'+Math.max(2,Math.round(n/87));
+function fb(img){ if(img.dataset.alt){ img.src=img.dataset.alt; img.dataset.alt=''; }
+  else { img.onerror=null; img.src=PLACEHOLDER; } }
 
 async function boot(){
   C = await (await fetch('content.json?v='+Date.now())).json();
   BK = C.brands[BRAND];
-  PRODS = C.products.filter(p=>p.brand===BRAND);
+  // truth gate: only products whose deliverable exists at build time render;
+  // personalised SKUs render as a waitlist.
+  PRODS = C.products.filter(p=>p.brand===BRAND && (p.available||p.personalised));
   paintBrand(); paintWorlds(); paintShop(); paintPerso();
+  if(location.hash.startsWith('#p/')) openP(location.hash.slice(3));
 }
+function imgOf(p){ return p.img || ('img/'+p.id+'.png'); }
 function paintBrand(){
-  document.title = BK.name.replace('&amp;','&')+' — '+BK.tagline;
   $('#logo').innerHTML = BK.short+'<b>.</b>';
   $('#eyebrow').textContent = BK.tagline;
   $('#h1').textContent = BK.hero_line;
@@ -346,48 +354,70 @@ function paintBrand(){
   $('#aboutB').innerHTML = BK.about;
   $('#promise').textContent = BK.promise;
   $('#flogo').innerHTML = BK.short+'<b>.</b>';
-  $('#heroimg').src = 'img/'+(PRODS[0]?.id||'')+'.png';
-  $('#heroimg').alt = BK.hero;
+  const h=PRODS.find(p=>!p.personalised);
+  if(h){ const im=$('#heroimg'); im.dataset.alt='img/'+h.id+'.png';
+    im.onerror=()=>fb(im); im.src=imgOf(h); im.alt=BK.hero; }
   $('#suH').textContent = 'One new world a week, free';
-  $('#suP').textContent = 'A page, a colouring sheet, and wherever '+BK.hero+' got to this week. Leave whenever you like.';
+  $('#suP').textContent = 'A page, a colouring sheet, and wherever '+BK.hero+
+    ' got to this week — over Instagram DM, where a real person replies.';
+  $('#suBtn').href = 'https://ig.me/m/'+BK.handle;
 }
 function paintWorlds(){
   $('#worlds').innerHTML = BK.worlds.map(w=>
     `<div class="world"><h3>${w.n}</h3><p>${w.d}</p></div>`).join('');
   $('#worldsK').textContent = BK.hero+"'s worlds";
 }
+function ageLabel(a){ return a[0]+'–'+a[1]+' yrs'; }
 function paintShop(){
   const cats=[...new Set(PRODS.map(p=>p.cat))];
   $('#filters').innerHTML = `<button class="f on" data-c="all">Everything</button>`+
     cats.map(c=>`<button class="f" data-c="${c}">${c}</button>`).join('');
+  const bands=[[0,2,'0–2'],[2,4,'2–4'],[4,7,'4–6']];
+  $('#agef').innerHTML = `<button class="f on" data-a="all">Any age</button>`+
+    bands.map((b,i)=>`<button class="f" data-a="${i}">${b[2]}</button>`).join('');
+  let cat='all', band='all';
+  const apply=()=>{ document.querySelectorAll('.card').forEach(k=>{
+    const p=PRODS.find(x=>x.id===k.dataset.id);
+    const okC = cat==='all'||p.cat===cat;
+    const okA = band==='all'|| (p.ages && p.ages[0] < bands[band][1] && p.ages[1] > bands[band][0]);
+    k.style.display=(okC&&okA)?'':'none';});};
   $('#filters').onclick=e=>{ const b=e.target.closest('.f'); if(!b)return;
     [...$('#filters').children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
-    const c=b.dataset.c;
-    document.querySelectorAll('.card').forEach(k=>{
-      k.style.display=(c==='all'||k.dataset.cat===c)?'':'none';});};
+    cat=b.dataset.c; apply();};
+  $('#agef').onclick=e=>{ const b=e.target.closest('.f'); if(!b)return;
+    [...$('#agef').children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    band=b.dataset.a==='all'?'all':+b.dataset.a; apply();};
   $('#grid').innerHTML = PRODS.map(p=>`
-    <article class="card" data-cat="${p.cat}" onclick="openP('${p.id}')">
-      <div class="shot"><img src="img/${p.id}.png" alt="${p.name}" loading="lazy">
+    <article class="card" data-id="${p.id}" onclick="openP('${p.id}')">
+      <div class="shot"><img src="${imgOf(p)}" data-alt="img/${p.id}.png" alt="${p.name}"
+          loading="lazy" onerror="fb(this)">
         ${p.flag?`<span class="flag">${p.flag}</span>`:''}
         ${p.world?`<span class="wtag">${p.world}</span>`:''}</div>
       <div class="cbody"><h3>${p.name}</h3>
         <div class="vline">${p.value}</div>
         <p class="hook">${p.hook}</p>
         <div class="crow"><span class="price">${money(p.price)}</span>
-          <button class="buy">${p.cta}</button></div></div>
+          <button class="buy">${p.personalised?'Waitlist':p.cta}</button></div></div>
     </article>`).join('');
 }
 function openP(id){
   const p = PRODS.find(x=>x.id===id); if(!p) return;
-  const pages = (p.pages||[1,2,3,4]).map(n=>
-    `<img src="img/pages/${p.id}_p${n}.png" alt="page ${n} of ${p.name}"
+  history.replaceState(null,'','#p/'+id);
+  const pages = (p.pages||[]).map(n=>
+    `<img src="img/pages/${p.id}_p${n}.webp" alt="page ${n} of ${p.name}"
       loading="lazy" onclick="zoom(this.src)"
       onerror="this.style.display='none'">`).join('');
+  const buy = p.buy
+    ? `<a class="bigbuy" href="${p.buy}" target="_blank" rel="noopener">${p.cta} · ${money(p.price)}</a>`
+    : p.personalised
+      ? `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">Join the waitlist on Instagram</a>`
+      : `<a class="bigbuy" href="https://ig.me/m/${BK.handle}" target="_blank" rel="noopener">${p.cta} · ${money(p.price)} — DM to order</a>`;
   $('#sheetBody').innerHTML = `
     <div class="swrap">
-      <div class="sleft"><img class="big" src="img/${p.id}.png" alt="${p.name}">
-        <div class="pv"><h5>Look inside — first pages</h5>
-          <div class="pages">${pages}</div></div></div>
+      <div class="sleft"><img class="big" src="${imgOf(p)}" data-alt="img/${p.id}.png"
+          alt="${p.name}" onerror="fb(this)">
+        ${pages?`<div class="pv"><h5>Look inside — real pages</h5>
+          <div class="pages">${pages}</div></div>`:''}</div>
       <div class="sright">
         <span class="kicker">${p.kicker}</span>
         <h2>${p.name}</h2>
@@ -395,22 +425,23 @@ function openP(id){
         <p class="lead">${p.pitch}</p>
         <h4>What your child gets</h4><p class="how">${p.child_gets||''}</p>
         <h4>What's inside</h4><ul class="inside">${p.inside.map(i=>`<li>${i}</li>`).join('')}</ul>
-        <h4>How it works</h4><p class="how">${p.how}</p>
-        ${p.buy?`<a class="bigbuy" href="${p.buy}" target="_blank" rel="noopener">${p.cta} · ${money(p.price)}</a>`
-               :`<button class="bigbuy" onclick="${p.personalised?"document.getElementById('sheet').classList.remove('open');document.body.style.overflow='';location.hash='#personalised'":'notify()'}">${p.cta} · ${money(p.price)}</button>`}
-        <p class="trust">${p.trust}</p>
+        ${p.how?`<h4>How it works</h4><p class="how">${p.how}</p>`:''}
+        ${buy}
+        <p class="trust">${p.trust||''}</p>
       </div></div>`;
   $('#sheet').classList.add('open'); document.body.style.overflow='hidden';
 }
-function closeP(){$('#sheet').classList.remove('open');document.body.style.overflow='';}
+function closeP(){$('#sheet').classList.remove('open');document.body.style.overflow='';
+  history.replaceState(null,'',location.pathname);}
 function zoom(src){const l=$('#lb');l.querySelector('img').src=src;l.classList.add('on');}
 function paintPerso(){
   const p = PRODS.find(x=>x.personalised); if(!p) return;
   $('#persoT').textContent = 'What if your child was in the story?';
   $('#persoP').innerHTML = p.pitch;
   $('#persoPrice').textContent = money(p.price);
-  $('#persoCta').textContent = p.cta;
-  $('#mockCover').src = 'img/'+p.id+'.png';
+  $('#persoCta').textContent = 'Join the waitlist';
+  const mc=$('#mockCover'); mc.dataset.alt='img/'+p.id+'.png';
+  mc.onerror=()=>fb(mc); mc.src=imgOf(p);
   const worlds = [...new Set(PRODS.filter(x=>x.world&&x.world!=='All of them'&&x.world!=='Yours').map(x=>x.world))];
   $('#cw').innerHTML = worlds.map(w=>`<option>${w}</option>`).join('');
   pv();
@@ -436,10 +467,7 @@ function pickFile(f){
 }
 function clearFile(){ $('#thumb').classList.remove('on'); $('#dropzone').style.display='';
   $('#fileIn').value=''; }
-function notify(){alert('Almost ready. Leave your email at the bottom and you will be first to know.');}
-function sub(e){e.preventDefault();const v=$('#em').value;
-  $('#submsg').textContent='Thank you. We have got '+v+'.';
-  try{localStorage.setItem(BRAND+'_email',v)}catch(_){ } return false;}
+function waitlist(){ window.open('https://ig.me/m/'+BK.handle,'_blank'); }
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeP();$('#lb').classList.remove('on');}});
 boot();
 </script></body></html>
